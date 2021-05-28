@@ -70,3 +70,82 @@ header #header2 .righthead p {
   color: white;
   margin-top: 3px;
 }
+#membership {
+  display: flex;
+  width: 85%;
+  height: 90px;
+  text-align: center;
+  align-items: center;
+  margin-top: 100px;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    40deg,
+    rgb(169, 154, 250) 20%,
+    rgb(162, 145, 250) 20%,
+    rgb(162, 145, 250) 85%,
+    rgb(169, 154, 250) 85%
+  );
+  margin-left: 120px;
+}
+#membership img {
+  width: 150px;
+  height: 30px;
+  margin-left: 20px;
+}
+#membership p {
+  color: white;
+  margin-left: 90px;
+  font-size: 20px;
+}
+#membership .img2 {
+  height: 129px;
+  margin-left: 320px;
+  padding-bottom: 40px;
+}
+#imagesbar {
+  display: flex;
+  width: 180px;
+  height: 120px;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  margin-left: 120px;
+}
+#imagesbar img {
+  padding-right: 30px;
+}
+.offers {
+  display: flex;
+  margin-left: 120px;
+}
+.offers h2 {
+  padding-left: 30px;
+  margin-top: 10px;
+}
+
+.offerflexbar {
+  display: flex;
+  margin-left: 120px;
+}
+.offerslide {
+  display: flex;
+  border: 2px solid lightgrey;
+  width: 500px;
+  height: 100px;
+  text-align: center;
+  align-items: center;
+  margin-right: 40px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+.offerslide img {
+  width: 70px;
+  height: 70px;
+  margin-left: 5px;
+}
+.offerslide pre {
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-top: -50px;
+  padding-bottom: 30px;
+}
