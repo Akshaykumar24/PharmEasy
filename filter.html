@@ -167,14 +167,16 @@
               name="low"
               value="low"
               class="rad"
+              onclick="chelow()"
             /><br />
-            <label for="base" class="radlbl">₹500 - ₹1000</label>
+            <label for="basic" class="radlbl">₹500 - ₹1000</label>
             <input
               type="checkbox"
-              id="base"
-              name="base"
-              value="base"
+              id="basic"
+              name="basic"
+              value="basic"
               class="rad"
+              onclick="chebas()"
             /><br />
             <label for="medium" class="radlbl">₹1000 - ₹2000</label>
             <input
@@ -183,6 +185,7 @@
               name="medium"
               value="medium"
               class="rad"
+              onclick="chemed()"
             /><br />
             <label for="high" class="radlbl">₹2000 and above</label>
             <input
@@ -191,6 +194,7 @@
               name="high"
               value="high"
               class="rad"
+              onclick="chehig()"
             />
           </div>
         </div>
@@ -200,11 +204,14 @@
           <h2>Covid Essentials</h2>
           <p>Sort By:</p>
           <select name="sort" id="sort">
-            <option value="low to high">Price Low to High</option>
-            <option value="high to low">Price High to Low</option>
+            <option value="popu">Popularity</option>
+            <option value="low" onclick="lowa()">Price Low to High</option>
+            <option value="high" onclick="higher()">Price High to Low</option>
           </select>
         </div>
+        <div id="jav"></div>
       </div>
     </div>
   </body>
 </html>
+<script src="filter.js"></script>
