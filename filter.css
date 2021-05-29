@@ -3,28 +3,32 @@
 }
 #global {
   display: flex;
-  width: 70%;
+  flex-basis: content;
+  max-width: 1200px;
   margin: auto;
   padding-top: 5%;
 }
 #filter {
-  width: 25%;
+  max-width: 40%;
   margin: 0 2.5%;
+  flex: 1;
 }
 #filflex {
   display: flex;
   flex-direction: column;
 }
 .radlbl {
-  width: 150px;
+  width: 90%;
   float: left;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
 }
 .rad {
   float: right;
   width: 15px;
   height: 15px;
+  /* padding-left: 1rem; */
 }
+
 #search {
   width: 95%;
   margin: 5% 0;
@@ -40,6 +44,7 @@ hr {
 }
 #device {
   margin: 0 2.5%;
+  flex: 3.5;
 }
 #rt {
   display: flex;
@@ -51,9 +56,27 @@ hr {
   width: 250px;
   border-radius: 5px;
   height: 40px;
-  margin: 1rem 0 1rem 2rem;
+  margin: 1rem 0 1rem 4rem;
 }
 #rt > p {
-  margin: 1.5rem 0 1rem 8rem;
+  margin: 1.5rem 0 1rem 19rem;
   color: #4f585e;
+}
+#jav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#jav > .box {
+  width: 30%;
+  margin: 1.5%;
+  border: 1px solid #dfe3e6;
+  border-radius: 6px;
+  text-align: center;
+}
+.boxtag,
+.boxprice {
+  text-align: left;
+  color: #4f585e;
+  padding-left: 2rem;
 }
