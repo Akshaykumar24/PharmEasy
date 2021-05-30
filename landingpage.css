@@ -103,6 +103,77 @@ header #header2 .righthead p {
   color: white;
   margin-top: 8px;
 }
+#svgs {
+  width: 90%;
+  display: flex;
+  margin: auto;
+}
+#svgs > #insvg1,
+#svgs > #insvg2,
+#svgs > #insvg3 {
+  display: flex;
+  flex-direction: column;
+  background-image: url("imag/doc.png"), url("imag/gre1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-width: 60vh;
+  min-height: 30vh;
+  margin: 1.5%;
+  border: 0.5px solid rgb(207, 207, 207);
+  border-radius: 6px;
+  justify-content: space-around;
+  background-position: right, left;
+  background-size: 10vw 10vw, contain;
+}
+#svgs > div > h2 {
+  color: rgb(79, 88, 94);
+  padding: 1.5em;
+}
+#svgs > div > button {
+  height: 2.5rem;
+  width: 30%;
+  margin: 1rem 1.5rem;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+}
+#insvg1 > button {
+  background-color: rgb(64, 186, 153);
+  border: none;
+}
+#insvg1 > button:hover {
+  color: rgb(64, 186, 153);
+  background-color: white;
+  border: 2px solid rgb(64, 186, 153);
+}
+#insvg2 > button {
+  background-color: rgb(252, 128, 25);
+  border: none;
+}
+#insvg2 > button:hover {
+  color: rgb(252, 128, 25);
+  background-color: white;
+  border: 2px solid rgb(252, 128, 25);
+}
+#insvg3 > button {
+  background-color: rgb(0, 185, 225);
+  border: none;
+}
+#insvg3 > button:hover {
+  color: rgb(0, 185, 225);
+  background-color: white;
+  border: 2px solid rgb(0, 185, 225);
+}
+#svgs > #insvg2 {
+  background-image: url("imag/doc.png"), url("imag/yel2.svg");
+  background-position: right, left;
+  background-size: 10vw 10vw, contain;
+}
+#svgs > #insvg3 {
+  background-image: url("imag/doc.png"), url("imag/blue3.svg");
+  background-position: right, left;
+  background-size: 10vw 10vw, contain;
+}
 #membership {
   display: flex;
   width: 85%;
