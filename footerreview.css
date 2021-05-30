@@ -2,10 +2,12 @@
   margin-left: 150px;
   font-size: 25px;
   font-weight: bold;
+  margin-top: 60px;
 }
 .footerpartreview {
   margin-left: 130px;
   margin-top: 200px;
+  margin-bottom: 120px;
 }
 .footerpartreview a {
   color: black;
@@ -16,5 +18,5 @@
   font-weight: bold;
 }
 .footerpartreview p {
-  font-size: 11px;
+  font-size: 15px;
 }
