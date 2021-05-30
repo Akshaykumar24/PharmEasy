@@ -5,45 +5,76 @@
 header {
   background-color: teal;
   width: 100%;
-  height: 150px;
+  height: 130px;
+  position: relative;
 }
 header #header1 {
   width: 100%;
   padding-top: 20px;
   display: flex;
+
+  background-size: cover;
+  background-color: teal;
 }
 header #header1 img {
-  width: 150px;
+  width: 160px;
   height: 50px;
-  margin-left: 100px;
+  margin-left: 90px;
 }
-header #header1 input {
-  width: 750px;
-  margin-left: 60px;
-  border-radius: 10px;
-  font-size: 20px;
-  padding-left: 50px;
+header .select {
+  border: 1px solid blue;
+  width: 850px;
+  height: 45px;
+  margin-left: 50px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  border-radius: 5px;
   border: none;
 }
-header #header1 a i {
-  color: rgb(100, 97, 97);
-  margin-left: -54px;
-  width: 30px;
-  background-color: rgb(221, 237, 243);
-  height: 22px;
-  padding: 18px 11px;
-  margin-top: 2px;
-  border-radius: 10px;
+header .select p {
+  font-size: 18px;
+  color: rgb(16, 132, 126);
+  margin-top: 13px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+header .select i {
+  margin-left: 20px;
+  margin-top: 17px;
+  color: rgb(136, 151, 162);
+}
+header .select div {
+  border: 0.5px solid rgb(223, 227, 230);
+  height: 20px;
+  margin-top: 13px;
+  margin-left: 20px;
+}
+header .select input {
+  border: none;
+  width: 400px;
+  margin-left: 20px;
+  font-size: 17px;
+  color: rgb(186, 206, 207);
+}
+header .select .search i {
+  margin-left: 210px;
+  background-color: rgb(244, 247, 251);
 }
 header #header1 .headerleft {
   margin-left: 50px;
-  width: 250px;
-  font-size: 16px;
+  width: 200px;
+  height: 45px;
+  font-size: 13px;
   color: white;
-  padding: 10px;
-  background-color: rgb(70, 68, 68);
+  padding: 5px;
+  background-color: rgb(13, 108, 103);
   border-radius: 8px;
   border: none;
+  display: flex;
+}
+header #header1 .headerleft i {
+  margin-top: 20px;
+  margin-left: -80px;
 }
 header #header2 {
   width: 100%;
@@ -64,82 +95,13 @@ header #header2 .righthead {
 }
 header #header2 .righthead img {
   padding-right: 8px;
+  width: 35px;
+  height: 30px;
 }
 header #header2 .righthead p {
   padding-right: 40px;
   color: white;
-  margin-top: 3px;
-}
-#svgs {
-  width: 90%;
-  display: flex;
-  margin: auto;
-}
-#svgs > #insvg1,
-#svgs > #insvg2,
-#svgs > #insvg3 {
-  display: flex;
-  flex-direction: column;
-  background-image: url("imag/doc.png"), url("imag/gre1.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  min-width: 60vh;
-  min-height: 30vh;
-  margin: 1.5%;
-  border: 0.5px solid rgb(207, 207, 207);
-  border-radius: 6px;
-  justify-content: space-around;
-  background-position: right, left;
-  background-size: 10vw 10vw, contain;
-}
-#svgs > div > h2 {
-  color: rgb(79, 88, 94);
-  padding: 1.5em;
-}
-#svgs > div > button {
-  height: 2.5rem;
-  width: 30%;
-  margin: 1rem 1.5rem;
-  border-radius: 5px;
-  color: white;
-  font-size: 1rem;
-}
-#insvg1 > button {
-  background-color: rgb(64, 186, 153);
-  border: none;
-}
-#insvg1 > button:hover {
-  color: rgb(64, 186, 153);
-  background-color: white;
-  border: 2px solid rgb(64, 186, 153);
-}
-#insvg2 > button {
-  background-color: rgb(252, 128, 25);
-  border: none;
-}
-#insvg2 > button:hover {
-  color: rgb(252, 128, 25);
-  background-color: white;
-  border: 2px solid rgb(252, 128, 25);
-}
-#insvg3 > button {
-  background-color: rgb(0, 185, 225);
-  border: none;
-}
-#insvg3 > button:hover {
-  color: rgb(0, 185, 225);
-  background-color: white;
-  border: 2px solid rgb(0, 185, 225);
-}
-#svgs > #insvg2 {
-  background-image: url("imag/doc.png"), url("imag/yel2.svg");
-  background-position: right, left;
-  background-size: 10vw 10vw, contain;
-}
-#svgs > #insvg3 {
-  background-image: url("imag/doc.png"), url("imag/blue3.svg");
-  background-position: right, left;
-  background-size: 10vw 10vw, contain;
+  margin-top: 8px;
 }
 #membership {
   display: flex;
@@ -219,4 +181,17 @@ header #header2 .righthead p {
   margin-left: 15px;
   margin-top: -50px;
   padding-bottom: 30px;
+}
+.offerslide {
+  display: flex;
+  border: 2px solid lightgrey;
+  margin-right: 20px;
+  width: 250px;
+}
+
+.offerslide img {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+  margin-left: 10px;
 }

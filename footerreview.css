@@ -1,0 +1,20 @@
+.review {
+  margin-left: 150px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.footerpartreview {
+  margin-left: 130px;
+  margin-top: 200px;
+}
+.footerpartreview a {
+  color: black;
+  border-bottom: none;
+  font-size: 12px;
+}
+.footerpartreview h6 {
+  font-weight: bold;
+}
+.footerpartreview p {
+  font-size: 11px;
+}
