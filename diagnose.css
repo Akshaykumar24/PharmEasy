@@ -1,0 +1,121 @@
+* {
+  font-family: Open Sans, sans-serif !important;
+}
+#corhead,
+#corhead1 {
+  margin-left: 16%;
+  padding-top: 2rem;
+}
+#coromain,
+#coromain1 {
+  position: relative;
+  height: 200px;
+  width: 70%;
+  margin: 0 auto;
+}
+#coromain1 {
+  height: 250px;
+}
+.corotrack,
+.corotrack1 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  position: relative;
+  transition: transform 300ms ease-in;
+}
+.corocont,
+.corocont1 {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.slide,
+.slide1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  height: 90%;
+  margin: 10px;
+  border: 1px solid rgb(145, 192, 192);
+  border-radius: 5px;
+}
+
+#leftbtn,
+#leftbtn1 {
+  position: absolute;
+  top: 30%;
+  border: transparent;
+  background: transparent;
+  cursor: pointer;
+  /* transform: translateY(-50%); */
+  width: 12px;
+  left: -30px;
+  transform: rotate(180deg);
+}
+#rightbtn,
+#rightbtn1 {
+  position: absolute;
+  top: 40%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  /* transform: translateY(-50%); */
+  width: 12px;
+  right: -30px;
+}
+
+.inner > img {
+  width: 90px;
+  height: 60px;
+  margin: 1rem;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid rgb(223, 227, 230);
+}
+.inner > h3 {
+  font-weight: 550;
+  margin: 0;
+  padding-left: 1rem;
+  color: rgb(97, 105, 110);
+}
+h3 + h5,
+.inner1 > h5 {
+  color: rgb(158, 170, 179);
+  padding-left: 1rem;
+}
+
+.inner1 > img {
+  width: 35px;
+  height: 35px;
+  margin: 1rem;
+}
+.inner1 > h3 {
+  font-weight: 550;
+  margin: 0;
+  padding-left: 1rem;
+  color: rgb(97, 105, 110);
+}
+.inner1 > h3 + h5 {
+  margin: 0;
+  padding: 10px 0 5px 1rem;
+  color: rgb(82, 91, 97);
+}
+.inner1 > h5 + h5 {
+  margin: 0;
+  padding: 10px 0 5px 1rem;
+}
+.last {
+  padding-top: 1.5rem;
+}
+.last :nth-child(1) {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: rgb(188, 196, 202);
+}
+.last :nth-child(2) {
+  font-size: 14px;
+  color: rgb(134, 211, 190);
+}
