@@ -107,6 +107,7 @@ header #header2 .righthead p {
   width: 90%;
   display: flex;
   margin: auto;
+  margin-top: 50px;
 }
 #svgs > #insvg1,
 #svgs > #insvg2,
@@ -125,12 +126,13 @@ header #header2 .righthead p {
   background-position: right, left;
   background-size: 10vw 10vw, contain;
 }
-#svgs > div > h2 {
+#svgs > div > h4 {
   color: rgb(79, 88, 94);
   padding: 1.5em;
+  margin-top: 9px;
 }
 #svgs > div > button {
-  height: 2.5rem;
+  height: 40px;
   width: 30%;
   margin: 1rem 1.5rem;
   border-radius: 5px;
@@ -180,7 +182,7 @@ header #header2 .righthead p {
   height: 90px;
   text-align: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 50px;
   border-radius: 5px;
   background-image: linear-gradient(
     40deg,
