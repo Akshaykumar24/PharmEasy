@@ -5,9 +5,9 @@
   margin-top: 60px;
 }
 .footerpartreview {
-  margin-left: 130px;
-  margin-top: 200px;
-  margin-bottom: 120px;
+  margin-left: -50px;
+  margin-top: 70px;
+  margin-bottom: 80px;
 }
 .footerpartreview a {
   color: black;
@@ -19,6 +19,7 @@
 }
 .footerpartreview p {
   font-size: 15px;
+  width: 1300px;
 }
 .large_image img {
   width: 100%;
