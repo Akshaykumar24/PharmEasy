@@ -70,11 +70,10 @@ hr {
   letter-spacing: -0.3px;
 }
 #bot3 {
+  background-color: rgb(244, 247, 251);
   width: 100%;
   padding: 5% 10%;
-  margin: auto;
-  background-color: rgb(244, 247, 251);
-  padding-left: 100px;
+
   padding-right: 200px;
 }
 #b3first {
@@ -107,6 +106,7 @@ span > img {
 }
 #social {
   margin-left: 150px;
+  width: 280px;
 }
 #social > img {
   width: 50px;
