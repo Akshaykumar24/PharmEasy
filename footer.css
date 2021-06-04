@@ -1,13 +1,10 @@
-* {
-  font-family: Open Sans, sans-serif !important;
-}
 hr {
   height: 0.5px;
   background-color: rgb(238, 235, 235);
   border: rgb(238, 235, 235);
 }
 #bot1 {
-  width: 60%;
+  width: 70%;
   margin: auto;
   display: flex;
 }
@@ -24,13 +21,14 @@ hr {
 }
 #mob {
   width: 70%;
-  margin: 80px auto;
+  margin: auto;
   display: flex;
 }
-#mob > .mobimg > img {
-  width: 210px;
+#mob .mobimg img {
+  width: 240px;
   height: 420px;
-  padding-right: 110px;
+  padding-right: 10px;
+  margin-right: 100px;
 }
 .app {
   width: 400px;
@@ -50,7 +48,7 @@ hr {
 .log {
   background-color: #4f585e;
   color: white;
-  flex-basis: 40%;
+  min-width: 16rem;
   margin: 2.5%;
   padding: 12px 15px;
   border-radius: 5px;
@@ -71,26 +69,26 @@ hr {
   letter-spacing: -0.3px;
 }
 #bot3 {
-  width: 100%;
-  padding: 5% 10%;
-  margin: auto;
   background-color: rgb(244, 247, 251);
+  width: 100%;
+  margin: 0;
+  padding: 5% 5%;
 }
 #b3first {
   display: flex;
 }
 #feat {
   display: flex;
-  width: 60%;
+  flex: 3;
 }
 #feat > div {
   flex-basis: 100%;
 }
-#bot3 h4 ~ p {
-  color: #8897a2;
+#b3first p {
+  color: rgb(79, 88, 94);
   line-height: 1.1;
-
   font-size: 16px;
+  font-weight: 400;
 }
 span > img {
   height: 2rem;
@@ -98,26 +96,47 @@ span > img {
 }
 #b3sec {
   display: flex;
+  width: 1100px;
 }
 #copy {
-  padding-left: 3rem;
   padding-top: 4rem;
-  margin-left: 3rem;
+  margin-left: 330px;
   text-align: right;
 }
+#social {
+  margin-left: 20px;
+  flex: 1;
+}
 #social > img {
-  color: white;
-  width: 25px;
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-  background-color: #ef7b81;
-  padding: 10px;
+  width: 50px;
+  background-color: teal;
+  padding: 5px;
   border-radius: 22px;
   margin: 0.75rem;
 }
 #social > img:hover {
   transform: scale(1.2);
 }
+#social > iframe {
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  margin-top: 3rem;
+}
+#feat p {
+  padding-bottom: 7px;
+}
+#feat h4 {
+  padding-top: 10px;
+  font-weight: 700;
+}
 #feat p:hover {
   color: rgb(16, 132, 126);
+}
+
+#social > img:hover {
+  transform: scale(1.2);
+}
+#pay > span > img {
+  height: 3rem;
 }
