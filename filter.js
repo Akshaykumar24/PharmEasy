@@ -5,6 +5,16 @@ var imgarr = [
   "https://cdn01.pharmeasy.in/dam/products_otc/V36951/babychakra-hand-sanitizer-bottle-of-50-ml-2-1613733042.jpg?dim=200x0&dpr=1.25&q=100",
   "https://cdn01.pharmeasy.in/dam/products_otc/022290/becozym-c-forte-vitamin-b-complex-biotin-vitamin-c-strip-of-15-tablets-2-1605104971.jpg?dim=200x0&dpr=1.25&q=100",
   "https://cdn01.pharmeasy.in/dam/products_otc/I40119/dettol-ph-balanced-skincare-handwash-packet-of-175-ml-2-1610439760.jpg?dim=200x0&dpr=1.25&q=100",
+  "https://cdn01.pharmeasy.in/dam/products_otc/I41646/baidyanath-chyawanprash-special-health-food-jar-of-500-g-2-1614878877.jpg?dim=200x0&dpr=1.25&q=100",
+  "https://cdn01.pharmeasy.in/dam/products_otc/I48399/protinex-lite-vanilla-nutrition-drink-tin-of-250-g-2-1613553261.jpg?dim=200x0&dpr=1.25&q=100",
+  "https://cdn01.pharmeasy.in/dam/products/I08024/climax-for-men-bottle-of-12-g-spray-box-front-1-1603444769.jpg?dim=200x0&dpr=1.25&q=100",
+  "https://cdn01.pharmeasy.in/dam/products_otc/W84040/savlon-disinfectant-liquid-500-ml-2-1613733059.jpg?dim=200x0&dpr=1.25&q=100",
+  "https://cdn01.pharmeasy.in/dam/products_otc/269382/i-know-ovulation-detection-kit-3-1612421368.jpg?dim=200x0&dpr=1.25&q=100",
+  "https://cdn01.pharmeasy.in/dam/products_otc/U60635/amrutanjan-comfy-ultra-xl-sanitary-pads-packet-of-6-2-1613733735.jpg?dim=200x0&dpr=1.25&q=100",
+  "https://cdn01.pharmeasy.in/dam/products_otc/M67325/bpl-smart-oxy-finger-tip-pulse-black-oximeter-black-2-1601980773.jpg?dim=200x0&dpr=1.25&q=100",
+  "https://cdn01.pharmeasy.in/dam/products_otc/C02103/jziki-jzk-301-pulse-oximeter-2-1620207350.jpg?dim=200x0&dpr=1.25&q=100",
+  "https://cdn01.pharmeasy.in/dam/products_otc/Z36722/beurer-ft-09-1-clinical-thermometer-2-1606819406.jpg?dim=200x0&dpr=1.25&q=100",
+  "https://cdn01.pharmeasy.in/dam/products_otc/S03838/colgate-diabetics-special-toothpaste-for-diabetics-with-madhunashini-and-jamun-seed-extracts-sugar-free-toothpaste-70g-3-1620213216.jpg?dim=200x0&dpr=1.25&q=100",
 ];
 
 //array of brands, medicine names
@@ -12,9 +22,12 @@ var tagarr = [
   "Dettol",
   "Kapiva",
   "Apollo",
-  "Thor",
-  "Mjiolnir",
+  "Paracetamol",
+  "Pfizer",
   "Is this even a Medicine",
+  "Bolghar",
+  "Zandu Balm",
+  "Zova",
 ];
 console.log(
   imgarr[Math.floor(Math.random() * imgarr.length)],
