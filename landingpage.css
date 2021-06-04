@@ -1,11 +1,10 @@
-* {
-  margin: 0px;
-  padding: 0px;
-}
+
 header {
   background-color: teal;
   width: 100%;
   height: 150px;
+  margin: 0px;
+  padding: 0px;
 }
 header #header1 {
   width: 100%;
