@@ -104,10 +104,11 @@ header #header2 .righthead p {
   margin-top: 8px;
 }
 #svgs {
-  width: 90%;
+  width: 100%;
   display: flex;
   margin: auto;
   margin-top: 50px;
+  margin-left: 120px;
 }
 #svgs > #insvg1,
 #svgs > #insvg2,
@@ -117,27 +118,27 @@ header #header2 .righthead p {
   background-image: url("imag/doc.png"), url("imag/gre1.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  min-width: 60vh;
-  min-height: 30vh;
-  margin: 1.5%;
+  min-width: 55vh;
+  min-height: 28vh;
+  margin-right: 20px;
   border: 0.5px solid rgb(207, 207, 207);
   border-radius: 6px;
   justify-content: space-around;
   background-position: right, left;
   background-size: 10vw 10vw, contain;
 }
-#svgs > div > h4 {
+#svgs > div > h3 {
   color: rgb(79, 88, 94);
   padding: 1.5em;
   margin-top: 9px;
 }
-#svgs > div > button {
+#svgs > .fon > button {
   height: 40px;
   width: 30%;
   margin: 1rem 1.5rem;
   border-radius: 5px;
   color: white;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 #insvg1 > button {
   background-color: rgb(64, 186, 153);
@@ -243,12 +244,16 @@ header #header2 .righthead p {
   margin-top: 30px;
   border-radius: 5px;
 }
-.offerslide img {
+.carousel {
+  margin-left: 70px;
+  margin-right: 85px;
+}
+.offerslide > img {
   width: 70px;
   height: 70px;
   margin-left: 5px;
 }
-.offerslide pre {
+.offerslide > pre {
   font-size: 15px;
   font-weight: bold;
   margin-left: 15px;
@@ -262,7 +267,7 @@ header #header2 .righthead p {
   width: 250px;
 }
 
-.offerslide img {
+.offerslide > img {
   width: 70px;
   height: 70px;
   margin-right: 10px;

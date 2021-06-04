@@ -43,8 +43,13 @@
   margin-left: 150px;
   margin-top: 60px;
 }
+.carousel-cell:hover {
+  transform: scale(1.05);
+  transition: transform 300ms;
+}
+
 .carousel-cell img {
-  width: 250px;
+  width: 240px;
   height: 250px;
   padding-right: 20px;
   border-radius: 5px;
@@ -55,6 +60,7 @@
   color: rgb(41, 39, 39);
   margin-top: 10px;
 }
+
 .cells12 img {
   width: 320px;
   height: 320px;
@@ -67,6 +73,11 @@
   margin-top: 40px;
   margin-bottom: 40px;
 }
+.third_image_slide img:hover {
+  transform: scale(1.05);
+  transition: transform 300ms;
+}
+
 .third_image_slide img {
   width: 300px;
   height: 350px;
@@ -84,6 +95,10 @@
   height: 400px;
   margin-right: 20px;
   border-radius: 5px;
+}
+.forth_image_slide img:hover {
+  transform: scale(1.05);
+  transition: transform 300ms;
 }
 .fifth_image img {
   margin-left: 130px;
