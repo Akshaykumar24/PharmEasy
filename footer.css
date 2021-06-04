@@ -4,8 +4,8 @@ hr {
   border: rgb(238, 235, 235);
 }
 #bot1 {
-  width: 60%;
-  margin-left: 80px;
+  width: 70%;
+  margin: auto;
   display: flex;
 }
 #bot1 > div {
@@ -21,7 +21,7 @@ hr {
 }
 #mob {
   width: 70%;
-  margin: 80px auto;
+  margin: auto;
   display: flex;
 }
 #mob .mobimg img {
@@ -29,7 +29,6 @@ hr {
   height: 420px;
   padding-right: 10px;
   margin-right: 100px;
-  margin-left: -150px;
 }
 .app {
   width: 400px;
@@ -49,7 +48,7 @@ hr {
 .log {
   background-color: #4f585e;
   color: white;
-  flex-basis: 40%;
+  min-width: 16rem;
   margin: 2.5%;
   padding: 12px 15px;
   border-radius: 5px;
@@ -72,24 +71,24 @@ hr {
 #bot3 {
   background-color: rgb(244, 247, 251);
   width: 100%;
-  padding: 5% 10%;
-
-  padding-right: 200px;
+  margin: 0;
+  padding: 5% 5%;
 }
 #b3first {
   display: flex;
 }
 #feat {
   display: flex;
-  width: 60%;
+  flex: 3;
 }
 #feat > div {
   flex-basis: 100%;
 }
-#bot3 h4 ~ p {
-  color: #8897a2;
+#b3first p {
+  color: rgb(79, 88, 94);
   line-height: 1.1;
   font-size: 16px;
+  font-weight: 400;
 }
 span > img {
   height: 2rem;
@@ -106,7 +105,7 @@ span > img {
 }
 #social {
   margin-left: 150px;
-  width: 280px;
+  flex: 1;
 }
 #social > img {
   width: 50px;
@@ -123,6 +122,7 @@ span > img {
 }
 #feat h4 {
   padding-top: 10px;
+  font-weight: 700;
 }
 #feat p:hover {
   color: rgb(16, 132, 126);
@@ -131,6 +131,6 @@ span > img {
 #social > img:hover {
   transform: scale(1.2);
 }
-#feat p:hover {
-  color: rgb(16, 132, 126);
+#pay > span > img {
+  height: 3rem;
 }

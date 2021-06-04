@@ -1,5 +1,8 @@
 .review {
-  margin-left: 150px;
+  width: 90%;
+
+  margin: auto;
+  margin-left: 6em;
   font-size: 25px;
   font-weight: bold;
   margin-top: 60px;
