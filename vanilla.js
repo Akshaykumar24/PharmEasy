@@ -44,7 +44,7 @@ next.addEventListener("click", (e) => {
   //Enter this condition if its at the last slide
   if (nextslide == null) {
     nextslide = track.querySelector(".slide");
-    console.log("fuck you");
+    console.log("fuck it");
   }
   console.log(current, nextslide);
   moveit(track, current, nextslide);
@@ -106,7 +106,7 @@ next1.addEventListener("click", (e) => {
   //Enter this condition if its at the last slide
   if (nextslide1 == null) {
     nextslide1 = track1.querySelector(".slide1");
-    console.log("fuck you");
+    console.log("fuck it");
   }
   console.log(current1, nextslide1);
   moveit1(track1, current1, nextslide1);
@@ -119,3 +119,35 @@ prev1.addEventListener("click", (e) => {
   //move to the next slide
   moveit1(track1, current1, prevslide1);
 });
+let delay = 2;
+setInterval(test, 4000);
+setInterval(test2, 4000, delay * 1000);
+
+next.addEventListener("click", test());
+function test(e) {
+  const current = track.querySelector(".current");
+  var nextslide = current.nextElementSibling;
+  console.log("work");
+  //move to the next slide
+  //Enter this condition if its at the last slide
+  if (nextslide == null) {
+    nextslide = track.querySelector(".slide");
+    console.log("fuck it");
+  }
+  console.log(current, nextslide);
+  moveit(track, current, nextslide);
+}
+
+next1.addEventListener("click", test2());
+function test2(e) {
+  const current1 = track1.querySelector(".current1");
+  var nextslide1 = current1.nextElementSibling;
+  //move to the next slide
+  //Enter this condition if its at the last slide
+  if (nextslide1 == null) {
+    nextslide1 = track1.querySelector(".slide1");
+    console.log("fuck it");
+  }
+  console.log(current1, nextslide1);
+  moveit1(track1, current1, nextslide1);
+}
