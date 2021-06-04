@@ -1,16 +1,18 @@
-
+* {
+  font-family: Open Sans, sans-serif !important;
+}
 header {
   background-color: teal;
   width: 100%;
   height: 150px;
   margin: 0px;
- position: relative;
+  position: relative;
 }
 header #header1 {
   width: 100%;
   padding-top: 20px;
   display: flex;
- background-size: cover;
+  background-size: cover;
   background-color: teal;
 }
 header #header1 img {
@@ -269,4 +271,96 @@ header #header2 .righthead p {
   height: 70px;
   margin-right: 10px;
   margin-left: 10px;
+}
+
+/* Rec Lab */
+
+#lab {
+  width: 100%;
+  background-color: rgb(212, 226, 250);
+  height: 300px;
+  padding: 3% 5%;
+  margin: 5% auto;
+  margin-bottom: 12%;
+}
+#lab > h3 {
+  font-weight: 700;
+  font-size: 20px;
+  color: rgb(79, 88, 94);
+}
+#slid {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1366px;
+  box-sizing: content-box;
+  overflow: hidden;
+  clear: both;
+}
+
+.car {
+  width: 30rem;
+  max-width: 100%;
+  margin: 1rem;
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid rgb(223, 227, 230);
+  border-radius: 8px;
+}
+.invi {
+  background-color: transparent;
+  border: none;
+}
+.car > ul {
+  list-style: none;
+  padding: 0;
+}
+.car > ul > li {
+  font-size: 18px;
+  padding: 5px 0;
+  color: rgb(79, 88, 94);
+}
+.car > .pribut > p {
+  font-weight: 900;
+  font-size: 16px;
+}
+.car > .pribut > p > span {
+  font-weight: 500;
+}
+.pribut {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+.car button {
+  background-color: white;
+  height: auto;
+  border: none;
+  border-radius: 8px;
+  color: rgb(18, 133, 127);
+  font-size: 16px;
+  font-weight: 900;
+}
+.car:hover button {
+  border: 2px solid rgb(18, 133, 127);
+  background-color: rgb(18, 133, 127);
+  color: white;
+}
+.car:hover {
+  border: 2px solid rgb(18, 133, 127);
+}
+#buts {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  float: right;
+  margin-top: -50px;
+}
+#buts > button {
+  background-color: white;
+  border: none;
+  margin: 10px;
+}
+#buts > button > img {
+  width: 30px;
+  border-radius: 5px;
 }
