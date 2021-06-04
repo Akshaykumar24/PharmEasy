@@ -1,0 +1,95 @@
+#home>span{
+    color:grey;
+    margin-left: 15px;
+    font-size: 12px;
+}
+#home>h1{
+    color: rgb(79,88,94);
+}
+#button{
+    display: flex;
+    margin-left: 5px;
+}
+#button>.a1{
+   
+    width: 100px;
+    border:2px solid rgb(247,247,247);
+    margin-right: 15px;
+    border-radius: 25px;
+    padding: 4px;
+    text-align: center;
+}
+#blocks{
+    
+   display: flex;
+    
+   flex-wrap: wrap; 
+    
+    box-sizing: border-box;
+}
+.b11{
+    border: 1px solid rgb(247,247,247);
+    display:flex;
+    height: 150px;
+    flex-direction: row;
+    flex: 5;
+}
+
+.box>.b11>.off>h4{
+  border: 2px solid rgb(255,255,255);
+  width: 90%;
+  margin-left: 25px;
+  font-size: 20px;
+  
+
+
+}
+.box>.b11>.off>h5{
+  border: 1px solid rgb(247,247,247);
+  width: 90%;
+  margin-top: -25px;
+  margin-left: 25px;
+  
+}
+.b11>img{
+    width: 15%;
+    margin-top:25px;
+    height: 60px;
+    
+    flex: 1;
+    
+}
+.box>.b11>.off>h6{
+    color: red;
+    margin-left: -42px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    color:rgb(79,88,94);
+    width: 47%;
+    margin:2% 1.5%;
+
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%);
+    
+
+}
+.code{
+    width: 95%;
+    display: flex;
+    border: 1px solid rgb(255,255,255);
+    padding-left: 10px;
+    border-top: 1px dotted black;
+
+}
+.code>p>a{
+    
+    margin-left: 17%;
+    color: teal;
+}
+.code>p{
+    color: rgb(79,88,94);
+    font-weight: 500;
+    width: 100%;
+}
