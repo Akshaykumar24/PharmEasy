@@ -104,7 +104,7 @@ span > img {
   text-align: right;
 }
 #social {
-  margin-left: 150px;
+  margin-left: 20px;
   flex: 1;
 }
 #social > img {
@@ -116,6 +116,12 @@ span > img {
 }
 #social > img:hover {
   transform: scale(1.2);
+}
+#social > iframe {
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  margin-top: 3rem;
 }
 #feat p {
   padding-bottom: 7px;
