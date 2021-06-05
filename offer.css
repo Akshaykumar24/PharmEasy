@@ -1,3 +1,7 @@
+#offercontainer{
+    width: 70%;
+    margin: auto;
+}
 #home>span{
     color:grey;
     margin-left: 15px;
@@ -12,11 +16,12 @@
 }
 #button>.a1{
    
-    width: 100px;
+    
     border:2px solid rgb(247,247,247);
+    
     margin-right: 15px;
     border-radius: 25px;
-    padding: 4px;
+    padding: 4px 15px ;
     text-align: center;
 }
 #blocks{
