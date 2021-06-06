@@ -15,7 +15,7 @@ header #header1 {
   background-size: cover;
   background-color: teal;
 }
-header #header1 img {
+header #header1 > img {
   width: 160px;
   height: 50px;
   margin-left: 90px;
@@ -31,13 +31,16 @@ header .select {
   border: none;
 }
 header .select p {
+  width: 140px;
   font-size: 18px;
   color: rgb(16, 132, 126);
   margin-top: 13px;
   margin-left: 20px;
   font-weight: bold;
 }
-header .select i {
+header .select > img {
+  width: 15px;
+  height: 15px;
   margin-left: 20px;
   margin-top: 17px;
   color: rgb(136, 151, 162);
@@ -55,7 +58,10 @@ header .select input {
   font-size: 17px;
   color: rgb(186, 206, 207);
 }
-header .select .search i {
+header .select .search img {
+  padding-top: 5px;
+  padding-right: 5px;
+  width: 30px;
   margin-left: 210px;
   background-color: rgb(244, 247, 251);
 }
