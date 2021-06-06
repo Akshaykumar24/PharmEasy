@@ -30,6 +30,7 @@
 .cart_box3 {
   display: flex;
   margin-top: 20px;
+
   width: 95%;
   margin: auto;
   height: 40px;
@@ -42,7 +43,17 @@
   margin-top: 10px;
   margin-left: 9px;
 }
-
+.cart_box3 > img {
+  width: 12px;
+  height: 12px;
+  margin-left: 15px;
+  margin-top: 13px;
+}
+.cart_box3 > .search > img {
+  padding-top: 13px;
+  margin-left: 24px;
+  width: 16px;
+}
 .cart_box3 div {
   border: 0.1px solid rgb(218, 218, 218);
   height: 17px;
@@ -60,7 +71,9 @@
   margin-top: -190px;
 }
 .cart_box_side > h2 {
-  margin-right: 350px;
+  margin-right: 400px;
+  color: rgb(173, 168, 168);
+  font-size: 30px;
 }
 .cart_box_side > img {
   padding-left: 100px;
