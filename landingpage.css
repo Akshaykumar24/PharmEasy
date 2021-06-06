@@ -7,6 +7,8 @@ header {
   height: 150px;
   margin: 0px;
   position: relative;
+  margin-left: -10px;
+  margin-top: -10px;
 }
 header #header1 {
   width: 100%;
