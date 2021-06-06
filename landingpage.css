@@ -61,16 +61,15 @@ header .select input {
   color: rgb(186, 206, 207);
 }
 header .select .search img {
-  padding-top: 5px;
-  padding-right: 5px;
+  padding-top: 11px;
+  padding-right: 11px;
   width: 30px;
   margin-left: 210px;
-  background-color: rgb(244, 247, 251);
 }
 header #header1 .headerleft {
   margin-left: 50px;
   width: 200px;
-  height: 45px;
+  height: 40px;
   font-size: 13px;
   color: white;
   padding: 5px;
@@ -78,6 +77,12 @@ header #header1 .headerleft {
   border-radius: 8px;
   border: none;
   display: flex;
+}
+.headerleft > img {
+  width: 10px;
+  height: 10px;
+  margin-top: 20px;
+  margin-left: -80px;
 }
 header #header1 .headerleft i {
   margin-top: 20px;
