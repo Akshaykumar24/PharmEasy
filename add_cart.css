@@ -1,0 +1,100 @@
+.divide {
+  display: flex;
+  margin-bottom: -280px;
+}
+section {
+  position: relative;
+  width: 20%;
+  height: 100vh;
+  margin-left: 270px;
+  display: flex;
+}
+section #slide {
+  width: 89%;
+  height: 227px;
+  margin-top: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+section > img {
+  width: 95%;
+  height: 200px;
+}
+section ul.navigation {
+  position: absolute;
+  margin-top: 300px;
+  display: flex;
+  margin-left: -40px;
+}
+section ul.navigation li {
+  list-style: none;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+section ul .navigation li img {
+  width: 40px;
+}
+
+.add_cart2 {
+  width: 300px;
+  height: 300px;
+  margin-top: 25px;
+}
+.p10 {
+  margin-bottom: -10px;
+  margin-top: -7px;
+}
+.add_cart2 > button {
+  width: 60%;
+  height: 40px;
+  color: white;
+  background-color: teal;
+  border: none;
+  font-size: 15px;
+}
+.add_insite {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.add_insite > h2 {
+  margin-right: 5px;
+}
+.add_insite > p {
+  font-size: 14px;
+  margin-right: 5px;
+}
+.add_insite .p2 {
+  text-decoration: line-through;
+}
+.add_insite > h5 {
+  color: white;
+  background-image: url(https://assets.pharmeasy.in/web-assets/dist/6aa9e076.png);
+  height: 20px;
+  width: 64px;
+  font-size: 12px;
+  padding-top: 5px;
+}
+.add_cart2 > h6 {
+  margin-top: -20px;
+}
+.add_cart3 {
+  margin-left: 90px;
+  margin-top: 18px;
+  width: 350px;
+  height: 300px;
+}
+.add_cart3 > h5 {
+  font-size: 19px;
+}
+.add_cart3 > button {
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  color: white;
+  background-color: teal;
+  border: none;
+  margin-top: -10px;
+}
