@@ -63,7 +63,7 @@ header .select input {
 header .select .search img {
   padding-top: 11px;
   padding-right: 11px;
-  width: 30px;
+  width: 18px;
   margin-left: 210px;
 }
 header #header1 .headerleft {
@@ -96,7 +96,7 @@ header #header2 {
 header #header2 .downhead {
   margin-left: 320px;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
 }
 header #header2 .downhead span {
   padding-right: 40px;
