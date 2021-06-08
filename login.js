@@ -117,9 +117,6 @@ function ran() {
   return Math.floor(Math.random() * 10);
 }
 
-const loguser = document.getElementById("useme");
-console.log(loguser);
-
 function logged(a, b, c, d) {
   let o1 = document.getElementById("otp1").value;
   let o2 = document.getElementById("otp2").value;
@@ -129,10 +126,12 @@ function logged(a, b, c, d) {
   if (o1 == a && o2 == b && o3 == c && o4 == d) {
     change();
     window.location.href = "mainlandingpage.html";
+  } else {
+    alert("Enter Valid Number and OTP sent");
   }
 }
 
 function change() {
-  console.log(mainlandingpage.getElementById("useme"));
-  loguser.innerHTML = "User";
+  const loguser = document.getElementById("useme");
+  loguser.innerText = "User";
 }
