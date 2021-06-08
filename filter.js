@@ -60,6 +60,28 @@ function run(x) {
     `;
 
   cont.append(box);
+
+  let product = {
+    taga,
+    pri,
+    imag,
+  };
+  let arr = localStorage.getItem("pharm");
+
+  if (arr == null) {
+    arr = [];
+  } else {
+    arr = JSON.parse(localStorage.getItem("pharm"));
+  }
+
+  arr.push(product);
+  localStorage.setItem("pharm", JSON.stringify(arr));
+
+  box.onclick = function (x) {
+    console.log(x);
+    window.location.href = "add_cart.html";
+    console.log(x);
+  };
 }
 
 //console.log(document.getElementById("sort").value);
