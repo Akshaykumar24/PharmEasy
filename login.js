@@ -98,7 +98,7 @@ function go() {
   var d = ran();
   console.log(a, b, c, d);
   parent.innerHTML = `
-    <h4> Enter OTP has been sent to ${num}</h4>
+    <h4 style="padding-left:20px"> Enter OTP has been sent to ${num}</h4>
     <div class="otpflex">
     <input type="text" id="otp1" />
     <input type="text" id="otp2" />
