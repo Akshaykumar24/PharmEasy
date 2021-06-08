@@ -7,7 +7,7 @@ header {
   height: 150px;
   margin: 0px;
   position: relative;
-  margin-left: -10px;
+
   margin-top: -10px;
 }
 header #header1 {
@@ -376,4 +376,118 @@ header #header2 .righthead p {
 #buts > button > img {
   width: 30px;
   border-radius: 5px;
+}
+.cross {
+  color: white;
+  background: teal;
+  width: 53px;
+  height: 50px;
+  font-size: 22px;
+  text-align: center;
+  padding: 9px;
+  margin-top: 40px;
+  margin-left: 69%;
+  cursor: pointer;
+}
+.popup {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 660%;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+.pop_content {
+  height: 15%;
+  width: 420px;
+  background: white;
+  float: right;
+  margin-top: -80px;
+}
+.lohead {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(16, 132, 126);
+}
+.head > img {
+  width: 50%;
+  align-self: center;
+  padding-top: 30px;
+  display: flex;
+  background-color: rgb(16, 132, 126);
+  height: 92px;
+  padding-left: 4%;
+}
+.headright > img {
+  margin-left: 250px;
+  height: 108px;
+  margin-top: -81px;
+  width: 171px;
+  float: left;
+}
+.login {
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  width: 62%;
+  font-size: 19px;
+  margin-top: 20px;
+  color: rgb(78, 66, 66);
+}
+
+.go {
+  margin-top: 30px;
+  width: 81%;
+  margin-left: 38px;
+  padding: 10px 8px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 6px;
+  color: white;
+  background-color: teal;
+  margin-bottom: 15px;
+  border: none;
+}
+#entry > input {
+  text-align: center;
+  width: 81%;
+  margin-left: 36px;
+  margin-top: 20px;
+  font-size: 15px;
+  height: 43px;
+  border-radius: 5px;
+  border: 0.5px solid rgb(75, 74, 74);
+}
+.foot {
+  text-align: center;
+  font-size: 15px;
+  color: rgb(105, 97, 97);
+  width: 80%;
+  margin-left: 33px;
+}
+.foot > a {
+  color: teal;
+  font-size: 12px;
+}
+
+.otpflex {
+  max-width: 90%;
+  display: flex;
+  flex-direction: row;
+}
+.otpflex > input {
+  width: 20%;
+  height: 2.5rem;
+  margin: 5%;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid rgb(136, 151, 162);
+}
+.resendflex {
+  max-width: 90%;
+  color: rgb(30, 139, 134);
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

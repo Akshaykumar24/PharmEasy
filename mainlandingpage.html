@@ -49,9 +49,11 @@
     <link rel="stylesheet" href="footerreview.css" />
 
     <link rel="stylesheet" href="css1.css" />
+   
     <link rel="stylesheet" href="landingpage.css" />
     <link rel="stylesheet" href="abovefooter.css" />
     <link rel="stylesheet" href="footer.css" />
+   
   </head>
 
   <body>
@@ -103,16 +105,17 @@
             onclick="(location.href ='offer.html')"
           />
           <p><a href="offer.html" style="color: white">Offers</a></p>
+
+
+
           <img
-            src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg"
-            alt=""
-            onclick="(location.href ='login.html')"
-          />
+            src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg" onclick="pop()"/>
           <p>
-            <a href="login.html" style="color: white" id="useme"
-              >Login/Signup</a
-            >
+            <a href="#" style="color: white" id="useme"
+              onclick="pop()">Login/Signup</a>
           </p>
+          
+
           <img
             src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg"
             alt=""
@@ -122,6 +125,7 @@
         </div>
       </div>
     </header>
+    
     <section>
       <div
         id="carousel-example-generic"
@@ -920,6 +924,45 @@
         <div id="copy">© 2021 PharmEasy. All Rights Reserved</div>
       </div>
     </div>
+<div class="popup">
+<div class="cross" onclick="x()">
+  <p>X</p>
+</div>
+    <div class="pop_content">
+      <header class="lohead">
+        <div class="head">
+         
+          <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt="logo" />
+        </div>
+        <div class="headright">
+          <img src="https://assets.pharmeasy.in/web-assets/dist/1fe1322a.svg" alt="logo2" />
+        </div>
+        
+      </header class="lohead">
+      <div class="login">
+        <p>Quick Login /Register</p>
+      </div>
+      <div id="entry">
+        <input type="text" placeholder="Enter your Phone number" id="num" />
+        <button class="go" onclick="go()">Continue</button>
+      </div>
+      
+      <div class="foot">
+        By clicking continue, you agree with our <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+    </div>
+    <script>
+      document.getElementById("useme").addEventListener("click",function(){
+        console.log("1234")
+        document.querySelector(".popup").style.display="block"
+      })
+      
+      function x(){
+       document.querySelector(".popup").style.display = "none" 
+      }
+
+    </script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="/path/to/flickity.pkgd.min.js"></script>
   </body>

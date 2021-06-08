@@ -6,7 +6,7 @@ body {
   width: 30%;
   margin-left: 15px;
 }
-header {
+.lohead {
   width: 90%;
   height: 90px;
   background-color: rgb(16, 132, 126);
