@@ -19,7 +19,7 @@ function sign() {
     alert("You've not agreed to our Terms and Conditions");
     return;
   }
-
+ 
   let user = {
     name,
     email,
