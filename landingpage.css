@@ -80,9 +80,28 @@ header #header1 .headerleft {
 .headerleft > img {
   width: 10px;
   height: 10px;
-  margin-top: 20px;
+  margin-top: 23px;
   margin-left: -80px;
 }
+.arw {
+  display: flex;
+}
+.left_arw > img {
+  width: 50px;
+  height: 50px;
+  margin-top: -243px;
+  position: relative;
+  margin-left: 102px;
+}
+
+.right_arw > img {
+  width: 50px;
+  height: 50px;
+  margin-left: 1223px;
+  margin-top: -261px;
+  position: relative;
+}
+
 header #header1 .headerleft i {
   margin-top: 20px;
   margin-left: -80px;
