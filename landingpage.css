@@ -421,6 +421,7 @@ header #header2 .righthead p {
 .lohead {
   width: 100%;
   height: 120px;
+  margin-left: 0px;
   background-color: rgb(16, 132, 126);
 }
 .head > img {
