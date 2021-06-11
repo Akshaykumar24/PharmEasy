@@ -1,4 +1,4 @@
-function sign() {
+/*function sign() {
   let form = document.getElementById("form");
   let name = form.name.value;
   let email = form.email.value;
@@ -73,8 +73,8 @@ function log() {
       }
     }
   }
-}
-
+}*/
+//starts from here----->
 function go() {
   console.log("lets go");
   let num = document.getElementById("num").value;
