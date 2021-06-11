@@ -16,31 +16,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
-      crossorigin="anonymous"
-    />
-
-    <!-- Optional theme -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
-      integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-1.12.4.min.js"
-      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-      crossorigin="anonymous"
-    ></script>
+   
+   
     <link
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
@@ -57,6 +34,7 @@
   </head>
 
   <body>
+    <!-- header -->
     <header>
       <div id="header1">
         <img
@@ -126,98 +104,30 @@
       </div>
     </header>
     
-    <section>
-      <div
-        id="carousel-example-generic"
-        class="carousel slide"
-        data-ride="carousel"
-        style="width: 100%; margin-left: 0px"
-      >
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li
-            data-target="#carousel-example-generic"
-            data-slide-to="0"
-            class="active"
-          ></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-        </ol>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div
-            class="item active"
-            onclick="(location.href='image1sliding.html')"
-          >
-            <img
-              src="https://cms-contents.pharmeasy.in/banner/09b4772af96-DWEBd.jpg?dim=1440x0&dpr=1.25&q=100"
-              alt="..."
-            />
-          </div>
-          <div class="item">
-            <img
-              src="https://cms-contents.pharmeasy.in/banner/b43e3f3e603-STAYHOMEDWEB.jpg?dim=1440x0&dpr=1.25&q=100"
-              alt="..."
-            />
-          </div>
-          <div class="item">
-            <img
-              src="https://cms-contents.pharmeasy.in/banner/540b6f8b1eb-4-50.jpg?dim=1440x0&dpr=1.25&q=100"
-              alt="..."
-            />
-          </div>
-          <div class="item">
-            <img
-              src="https://cms-contents.pharmeasy.in/banner/ccc07bd88c6-5.jpg?dim=1440x0&dpr=1.25&q=100"
-              alt="image"
-            />
-          </div>
-          <div class="item">
-            <img
-              src="https://cms-contents.pharmeasy.in/banner/e0cce45d289-4b-Dweb.jpg?dim=1440x0&dpr=1.25&q=100"
-              alt="image"
-            />
-          </div>
-          <div class="item">
-            <img
-              src="https://cms-contents.pharmeasy.in/banner/9459641af47-Dweb-herbs.jpg?dim=1440x0&dpr=1.25&q=100"
-              alt="image"
-              width="100%"
-            />
-          </div>
-        </div>
+    <!-- image sliding -->
+    
+  <div id="cont">
+  </div>
 
-        <!-- Controls -->
-        <a
-          class="left carousel-control"
-          href="#carousel-example-generic"
-          role="button"
-          data-slide="prev"
-        >
-          <span
-            class="glyphicon glyphicon-chevron-left"
-            aria-hidden="true"
-          ></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="right carousel-control"
-          href="#carousel-example-generic"
-          role="button"
-          data-slide="next"
-        >
-          <span
-            class="glyphicon glyphicon-chevron-right"
-            aria-hidden="true"
-          ></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </section>
+  <script>
+    let img = [
+      "https://cms-contents.pharmeasy.in/banner/fcf06e6cf90-STAYHOMEDWEB.jpg?dim=1440x0&dpr=1.25&q=100",
+      "https://cms-contents.pharmeasy.in/banner/3b30799ae78-COVIDFREE8JUNE.jpg?dim=1440x0&dpr=1.25&q=100",
+      "https://cms-contents.pharmeasy.in/banner/fef1ef3c06a-DWEBCOVID.jpg?dim=1440x0&dpr=1.25&q=100",
+    ];
+    var i = -1;
+    setInterval(function () {
+      i++;
+      if (i == img.length) {
+        i = 0;
+      }
+      let cont = document.getElementById("cont");
+      cont.innerHTML = `<img src=${img[i]} alt="img${i}">`;
+    }, 2000);
+  </script>
+
+<!-- next part -->
 
     <div id="svgs">
       <div id="insvg1" class="fon">
@@ -233,7 +143,7 @@
         <button>Order Now</button>
       </div>
     </div>
-
+<!-- membership -->
     <div id="membership">
       <img
         src="https://assets.pharmeasy.in/web-assets/dist/e3db129c.png"
@@ -246,7 +156,7 @@
         alt="logo"
       />
     </div>
-
+<!-- imag slider -->
     <div id="imagesbar">
       <img
         src="https://assets.pharmeasy.in/web-assets/dist/0ad2d80a.png"
@@ -273,6 +183,7 @@
         alt=""
       />
     </div>
+    <!-- offer -->
     <div class="offers">
       <img
         src="https://assets.pharmeasy.in/web-assets/dist/67890676.svg"
