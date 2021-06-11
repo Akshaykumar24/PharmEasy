@@ -1,0 +1,87 @@
+.plusimg{
+    box-sizing: border-box;
+    background-color:rgb(133,115,225);
+    width: 312px;
+    font-size: 15px;
+    color: white;
+  }
+  #left_box{
+      height: 700px;
+     
+      border: 2px solid black;
+      width: 312px;
+      margin-right: 40px;
+      
+      }
+  body{
+     max-width: 1024px;
+      margin: 0 auto;
+      min-height: 50vh;
+      box-sizing: border-box;
+      display: flex;
+    }
+    .bag{
+        padding: 26px;
+        
+    }
+    .bag>a:hover{
+        color: teal;
+    }
+    .bag>a{
+        padding: 20px;
+        color: rgb(82, 76, 76);
+    }
+    .profile>a{
+        color:rgb(82, 76, 76);
+        padding: 30px;
+        font-weight: 600;
+    }
+    .profile>a:hover{
+        color: teal;
+    }
+    .edit_part{
+        height: 500px;
+     margin-top: 105px;
+     border: 2px solid black;
+     width: 612px;
+     margin-right: 40px;
+     }
+     .entry{
+         padding: 20px ;
+     }
+     .entry>span{
+         color: red;
+     }
+     .entry>input{
+         width: 520px;
+         height: 40px;
+     }
+     .sub_for_offer{
+         width: 540px;
+         
+         background-color: rgb(255,247,228);
+         padding: 20px;
+         height: 200px;
+         margin-left: 17px;
+     }
+     .sub_for_offer>img{
+        float: right;
+        margin-top: -50px;
+         
+     }
+     .sub_for_offer>input{
+         width: 500px;
+         height: 40px;
+     }
+     .sub_for_offer>button{
+         height: 45px;
+         width: 150px;
+         margin-top: 15px;
+         font-weight: 700;
+         border-radius: 6px;
+     }
+     #save{
+         float: right;
+         height: 30px;
+         width: 70px ;
+     }
