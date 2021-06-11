@@ -59,10 +59,10 @@ header .select input {
   font-size: 17px;
   color: rgb(186, 206, 207);
 }
-header .select .search img {
+.search > img {
   padding-top: 11px;
-  padding-right: 11px;
-  width: 18px;
+  padding-right: 9px;
+  width: 30px;
   margin-left: 210px;
 }
 header #header1 .headerleft {
