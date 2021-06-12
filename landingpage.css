@@ -3,11 +3,10 @@
 }
 header {
   background-color: teal;
-  width: 100%;
+  width: 102%;
   height: 150px;
-  margin: 0px;
+  margin-left: -8px;
   position: relative;
-
   margin-top: -10px;
 }
 header #header1 {
@@ -60,10 +59,10 @@ header .select input {
   font-size: 17px;
   color: rgb(186, 206, 207);
 }
-header .select .search img {
+.search > img {
   padding-top: 11px;
-  padding-right: 11px;
-  width: 18px;
+  padding-right: 9px;
+  width: 30px;
   margin-left: 210px;
 }
 header #header1 .headerleft {
@@ -81,9 +80,28 @@ header #header1 .headerleft {
 .headerleft > img {
   width: 10px;
   height: 10px;
-  margin-top: 20px;
+  margin-top: 23px;
   margin-left: -80px;
 }
+.arw {
+  display: flex;
+}
+.left_arw > img {
+  width: 50px;
+  height: 50px;
+  margin-top: -243px;
+  position: relative;
+  margin-left: 102px;
+}
+
+.right_arw > img {
+  width: 50px;
+  height: 50px;
+  margin-left: 1223px;
+  margin-top: -261px;
+  position: relative;
+}
+
 header #header1 .headerleft i {
   margin-top: 20px;
   margin-left: -80px;
@@ -115,6 +133,21 @@ header #header2 .righthead p {
   color: white;
   margin-top: 8px;
 }
+/* image sliding */
+#cont {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+#cont > img {
+  max-width: 100%;
+  margin: auto;
+}
+.btn_slide {
+  width: 30px;
+  height: 100px;
+}
+/* next part */
 #svgs {
   width: 100%;
   display: flex;
@@ -150,7 +183,7 @@ header #header2 .righthead p {
   margin: 1rem 1.5rem;
   border-radius: 5px;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 #insvg1 > button {
   background-color: rgb(64, 186, 153);
@@ -407,6 +440,7 @@ header #header2 .righthead p {
 .lohead {
   width: 100%;
   height: 120px;
+  margin-left: 0px;
   background-color: rgb(16, 132, 126);
 }
 .head > img {

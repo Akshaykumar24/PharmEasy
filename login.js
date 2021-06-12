@@ -1,4 +1,4 @@
-function sign() {
+/*function sign() {
   let form = document.getElementById("form");
   let name = form.name.value;
   let email = form.email.value;
@@ -19,7 +19,7 @@ function sign() {
     alert("You've not agreed to our Terms and Conditions");
     return;
   }
-
+ 
   let user = {
     name,
     email,
@@ -73,8 +73,8 @@ function log() {
       }
     }
   }
-}
-
+}*/
+//starts from here----->
 function go() {
   console.log("lets go");
   let num = document.getElementById("num").value;
