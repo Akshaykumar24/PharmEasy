@@ -33,8 +33,8 @@ section ul.navigation li {
   border: 1px solid black;
   border-radius: 4px;
 }
-section ul .navigation li img {
-  width: 40px;
+.navigation li > img {
+  width: 50px;
 }
 
 .add_cart2 {

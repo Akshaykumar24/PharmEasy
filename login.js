@@ -117,6 +117,7 @@ function ran() {
   return Math.floor(Math.random() * 10);
 }
 
+var loog = false;
 function logged(a, b, c, d) {
   let o1 = document.getElementById("otp1").value;
   let o2 = document.getElementById("otp2").value;
@@ -124,14 +125,37 @@ function logged(a, b, c, d) {
   let o4 = document.getElementById("otp4").value;
   console.log(o1, o2, o3, o4);
   if (o1 == a && o2 == b && o3 == c && o4 == d) {
-    change();
+    loog = true;
+
+    let profile = document.createElement("p");
+    profile.innerText = "Fuck Yeah";
+    let loguser = document.getElementById("useme");
+    loguser.append("profile");
+    // let par = document.getElementById("rit");
+    // par.insertBefore(loguser, profile);
+
     window.location.href = "mainlandingpage.html";
+
+    change();
   } else {
     alert("Enter Valid Number and OTP sent");
   }
 }
 
 function change() {
-  const loguser = document.getElementById("useme");
+  let loguser = document.getElementById("useme");
+  console.log(loguser);
+
   loguser.innerText = "User";
+}
+
+if (loog) {
+  let loguser = document.getElementById("useme");
+  console.log(loguser, loog);
+
+  loguser.innerText = "User";
+} else {
+  console.log(loog);
+  let loguser = document.getElementById("useme");
+  console.log(loguser, loog);
 }

@@ -1,0 +1,126 @@
+.qtycard {
+  width: 90%;
+}
+#carter {
+  margin: 0 15%;
+}
+#cont {
+  width: 50%;
+}
+#butcont {
+  padding-left: 150px;
+  width: 300px;
+}
+#butcont > button {
+  width: 350px;
+  height: 50px;
+  margin: 5% 10%;
+}
+.parent {
+  display: flex;
+  min-width: 600px;
+  border-radius: 10px;
+  height: fit-content;
+  border: 1px solid rgb(223, 227, 230);
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.fximg {
+  flex: 1;
+}
+.fximg > img {
+  width: 100px;
+}
+.fxtxt {
+  padding-left: 10px;
+  flex: 5;
+}
+.fxtaga,
+.both {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.rig > h5 {
+  color: white;
+  background-image: url(https://assets.pharmeasy.in/web-assets/dist/6aa9e076.png);
+  height: 17px;
+  width: 64px;
+  font-size: 12px;
+  padding-top: 3px;
+  margin: 0;
+}
+.fxtaga > button > img {
+  width: 20px;
+}
+.fxtaga > button {
+  background-color: transparent;
+  border: none;
+}
+.del {
+  font-size: 14px;
+  padding: 5px 0;
+  margin: 0;
+}
+.comp > h4 {
+  padding: 5px 0;
+  margin: 0;
+}
+.qty {
+  width: 100px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 0;
+  margin: 0;
+}
+.ord {
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+#det {
+  padding-left: 15px;
+}
+#coup {
+  background-color: white;
+  color: rgb(16, 132, 126);
+  border: 1px solid rgb(16, 132, 126);
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 6px;
+}
+hr {
+  width: 350px;
+}
+#proceed {
+  background-color: rgb(16, 132, 126);
+  color: white;
+  border: 1px solid rgb(16, 132, 126);
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 6px;
+}
+#fri {
+  width: 330px;
+  height: 20px;
+  border: 1px dotted rgb(16, 132, 126);
+  margin-left: 30px;
+  background-color: rgb(242, 255, 248);
+  color: rgb(59, 184, 150);
+  border-radius: 6px;
+  padding: 16px 0px;
+  padding-left: 20px;
+  margin: 20px 0 50px 30px;
+}
+.mrp {
+  text-decoration: line-through;
+}
+.rig > * {
+  margin: 5px;
+}
+.act {
+  font-size: 18px;
+  font-weight: 700;
+}

@@ -29,6 +29,7 @@ var tagarr = [
   "Zandu Balm",
   "Zova",
 ];
+var comparr = ["This", "That", "Here", "There"];
 console.log(
   imgarr[Math.floor(Math.random() * imgarr.length)],
   tagarr[Math.floor(Math.random() * tagarr.length)],
@@ -38,6 +39,7 @@ console.log(
 var cont = document.getElementById("jav");
 //function to generate n number of products
 function loop(f) {
+  localStorage.removeItem("pharm");
   cont.innerHTML = "";
   for (var i = 1; i <= 35; i++) {
     f(i);
@@ -51,8 +53,17 @@ function run(x) {
   box.setAttribute("class", "box");
   box.setAttribute("id", `boxid${x}`);
   var imag = imgarr[Math.floor(Math.random() * imgarr.length)];
+  var img3 = imgarr[Math.floor(Math.random() * imgarr.length)];
+  var img2 = imgarr[Math.floor(Math.random() * imgarr.length)];
+  var img1 = imag;
+  var company = comparr[Math.floor(Math.random() * comparr.length)];
   var taga = tagarr[Math.floor(Math.random() * tagarr.length)];
   var pri = Math.floor(Math.random() * 3000);
+  var off = Math.round(Math.random() * 0.3 * 100) / 100;
+  var mrp = Math.floor(pri / (1 - off));
+  var stock = Math.round(Math.random() * 100) / 100;
+  var count = x;
+  var qty = 0;
   box.innerHTML = `
     <img src="${imag}" class="boximg"/>
     <h3 id="tag${x}" class="boxtag">${taga}</h3>
@@ -65,6 +76,15 @@ function run(x) {
     taga,
     pri,
     imag,
+    img1,
+    img2,
+    img3,
+    company,
+    off,
+    mrp,
+    stock,
+    count,
+    qty,
   };
   let arr = localStorage.getItem("pharm");
 
@@ -77,10 +97,21 @@ function run(x) {
   arr.push(product);
   localStorage.setItem("pharm", JSON.stringify(arr));
 
-  box.onclick = function (x) {
-    console.log(x);
+  box.onclick = function (product) {
+    console.log(product);
+    let arr = JSON.parse(localStorage.getItem("pharm"));
+
+    let id = box.id.split("boxid")[1];
+    for (var i = 0; i < arr.length; i++) {
+      //console.log(arr[i]);
+      if (arr[i].count == id) {
+        console.log(arr[i]);
+        localStorage.removeItem("showproduct");
+        localStorage.setItem("showproduct", JSON.stringify(arr[i]));
+        break;
+      }
+    }
     window.location.href = "add_cart.html";
-    console.log(x);
   };
 }
 

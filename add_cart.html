@@ -93,6 +93,7 @@
               src="https://cdn01.pharmeasy.in/dam/products/064425/ecosprin-75mg-strip-of-14-tablets-box-front-1-1607336525.jpg?dim=100x80&dpr=1.25&q=100"
               alt=""
               onclick="slideImg('slide',this.src)"
+              id="img1"
             />
           </li>
           <li>
@@ -100,6 +101,7 @@
               src="https://cdn01.pharmeasy.in/dam/products/064425/ecosprin-75mg-strip-of-14-tablets-front-2-1607336671.jpg?dim=100x80&dpr=1.25&q=100"
               alt=""
               onclick="slideImg('slide',this.src)"
+              id="img2"
             />
           </li>
           <li>
@@ -107,25 +109,26 @@
               src="https://cdn01.pharmeasy.in/dam/products/064425/ecosprin-75mg-strip-of-14-tablets-combo-3-1607336476.jpg?dim=100x80&dpr=1.25&q=100"
               alt=""
               onclick="slideImg('slide',this.src)"
+              id="img3"
             />
           </li>
         </ul>
       </section>
       <div class="add_cart2">
-        <h2>Ecosprin 75mg strip of 14 tablets</h2>
-        <p>By USV PVT LTD</p>
-        <h4 class="p10">14 Tablet(s) in Strip</h4>
+        <h2 id="tabname">Ecosprin 75mg strip of 14 tablets</h2>
+        <p id="tabcompany">By USV PVT LTD</p>
+        <h5 class="p10" id="stock">In Stock</h5>
         <div class="add_insite">
-          <h2>₹4.13*</h2>
+          <h2 id="actual">₹4.13*</h2>
           <p>MRP</p>
-          <p class="p2">₹4.86</p>
-          <h5>15% OFF</h5>
+          <p class="p2" id="original">₹4.86</p>
+          <h5 id="taboff">15% OFF</h5>
         </div>
         <h6>Inclusive of all taxes</h6>
-        <button type="button">Add To Cart</button>
+        <button type="button" onclick="cartme()">Add To Cart</button>
       </div>
       <div class="add_cart3">
-        <h5>1 item in cart</h5>
+        <h5 id="showcart">1 item in cart</h5>
         <button type="button" onclick="(location.href='cart.html')">
           View Cart
         </button>
@@ -330,3 +333,74 @@
   </body>
 </html>
 <script src="cart.js"></script>
+<link rel="stylesheet" href="cartitem.css" />
+<section>
+  <div class="parent">
+    <div class="fximg">
+      <img
+        src="https://cdn01.pharmeasy.in/dam/products_otc/U60635/amrutanjan-comfy-ultra-xl-sanitary-pads-packet-of-6-2-1613733735.jpg?dim=200x0&dpr=1.25&q=100"
+      />
+    </div>
+    <div class="fxtxt">
+      <div class="fxtaga">
+        <h2>taga</h2>
+        <button>
+          <img
+            src="https://image.flaticon.com/icons/png/128/1214/1214428.png"
+            alt="delete"
+          />
+        </button>
+      </div>
+      <div class="comp">
+        <h4>Company</h4>
+        <p class="del">
+          Will be Delivered in ${Math.ceil(Math.random()*7)} days
+        </p>
+      </div>
+      <div class="both">
+        <div class="lef">
+          <select class="qty">
+            <option value="0">QTY</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">Max 10</option>
+          </select>
+        </div>
+        <div class="rig">
+          <h5>off</h5>
+          <span>mrp</span>
+          <span>pri</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="butcont">
+    <button id="coup">APPLY COUPON</button>
+    <button id="proceed">Proceed To Check Out</button>
+    <div id="fri">Free Delivery for Order Above 500</div>
+    <h2>Order Summary</h2>
+    <div id="det">
+      <div class="ord">
+        <p>Cart value</p>
+        <p>20</p>
+      </div>
+      <div class="ord">
+        <p>Delivery Charge</p>
+        <p>20</p>
+      </div>
+      <hr />
+      <div class="ord">
+        <h3>Amount to be paid</h3>
+        <h3>40</h3>
+      </div>
+    </div>
+  </div>
+</section>
