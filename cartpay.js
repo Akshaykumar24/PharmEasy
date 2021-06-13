@@ -3,13 +3,10 @@ console.log("Oye");
 let arr = JSON.parse(localStorage.getItem("pharmcart"));
 let car = document.getElementById("carter");
 var sum = 0;
-for (var i = 0; i < arr.length; i++) {
-  sum += arr[i].pri;
-}
 
-if (arr.length == 0 || arr == null) {
+if (arr == null) {
   arr = [];
-
+  let car = document.getElementById("carter");
   car.innerHTML = `<div class="cart_box">
         <div class="cart_box1">
           <img
@@ -61,11 +58,14 @@ if (arr.length == 0 || arr == null) {
         />
       </div>`;
 } else {
+  for (var i = 0; i < arr.length; i++) {
+    sum += arr[i].pri;
+  }
   app(arr);
   let but = document.getElementById("butcont");
   but.innerHTML = `
     <button id="coup">APPLY COUPON</button>
-    <button id="proceed">Proceed To Check Out</button>
+    <button id="proceed" onclick="(location.href ='paynow.html')">Proceed To Check Out</button>
     <div id="fri">Free Delivery for Order Above 500</div>
     <h2>Order Summary</h2>
     <div id="det">
