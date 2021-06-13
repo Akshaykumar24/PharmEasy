@@ -152,14 +152,55 @@
         </button>
       </div>
       <div id="right">
-        <div class="charge">
+        <div class="charge" id="last">
           <p>Price Breakdown</p>
-          <p>Cart Value<span>₹200</span></p>
-          <p>Delivery Charge<span>₹50</span></p>
-          <hr />
-          <p>Amount to be paid<span>₹250</span></p>
+          <div id="det">
+            <div class="ord">
+              <p>Cart value</p>
+              <p>₹${Math.round(sum)}</p>
+            </div>
+            <div class="ord">
+              <p>Delivery Charge</p>
+              <p>${del}</p>
+            </div>
+            <hr />
+            <div class="ord">
+              <h3>Amount to be paid</h3>
+              <h3>₹${Math.round(sum) + del}</h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </body>
 </html>
+<script>
+  let arr = JSON.parse(localStorage.getItem("pharmcart"));
+  let sum = 0;
+  for (var i = 0; i < arr.length; i++) {
+    sum += arr[i].pri;
+  }
+  let del = 0;
+  if (sum > 500) {
+    del = 0;
+  } else {
+    del = 50;
+  }
+  let div = document.getElementById("last");
+  div.innerHTML = `<p>Price Breakdown</p>
+          <div id="det">
+            <div class="ord">
+              <p>Cart value</p>
+              <p>₹${Math.round(sum)}</p>
+            </div>
+            <div class="ord">
+              <p>Delivery Charge</p>
+              <p>${del}</p>
+            </div>
+            <hr />
+            <div class="ord">
+              <h3>Amount to be paid</h3>
+              <h3>₹${Math.round(sum) + del}</h3>
+            </div>
+          </div>`;
+</script>

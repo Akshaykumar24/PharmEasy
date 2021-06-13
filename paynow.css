@@ -89,3 +89,10 @@ p > span:nth-child(n + 1) {
   border-radius: 6px;
   border: none;
 }
+#det {
+  width: 250px;
+}
+.ord {
+  display: flex;
+  justify-content: space-between;
+}

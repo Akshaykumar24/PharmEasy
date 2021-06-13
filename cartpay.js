@@ -61,27 +61,32 @@ if (arr == null) {
   for (var i = 0; i < arr.length; i++) {
     sum += arr[i].pri;
   }
+  let del = 0;
+  if (sum > 500) {
+    del = 0;
+  } else {
+    del = 50;
+  }
   app(arr);
   let but = document.getElementById("butcont");
   but.innerHTML = `
     <button id="coup">APPLY COUPON</button>
-    <button id="proceed" onclick="(location.href ='paynow.html')">Proceed To Check Out</button>
+    <button id="proceed" onclick="(location.href ='paynow.html')">Proceed To Pay</button>
     <div id="fri">Free Delivery for Order Above 500</div>
     <h2>Order Summary</h2>
     <div id="det">
       <div class="ord">
         <p>Cart value</p>
-        <p>20</p>
+        <p>₹${Math.round(sum)}</p>
       </div>
       <div class="ord">
         <p>Delivery Charge</p>
-        <p>20</p>
+        <p>${del}</p>
       </div>
       <hr />
       <div class="ord">
         <h3>Amount to be paid</h3>
-        <h3>₹${Math.round(sum)}</h3>
-
+        <h3>₹${Math.round(sum) + del}</h3>
       </div>
     </div>
     `;
@@ -92,6 +97,7 @@ function app(arr) {
   car.innerHTML = "";
   for (var x = 0; x < arr.length; x++) {
     let div = document.createElement("div");
+
     div.innerHTML = `
       <div class="parent">
     <div class="fximg">
@@ -117,25 +123,25 @@ function app(arr) {
       </div>
       <div class="both">
         <div class="lef">
-          <select class="qty">
+          <select class="qty" id="sel">
             <option value="0">QTY</option>
-            <option value="1">QTY 1</option>
-            <option value="2">QTY 2</option>
-            <option value="3">QTY 3</option>
-            <option value="4">QTY 4</option>
-            <option value="5">QTY 5</option>
-            <option value="6">QTY 6</option>
-            <option value="7">QTY 7</option>
-            <option value="8">QTY 8</option>
-            <option value="9">QTY 9</option>
-            <option value="10">QTY Max 10</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">Max 10</option>
           </select>
         </div>
         <div class="rig">
           <h5>${Math.round(arr[x].off * 100)}% OFF</h5>
           <span>MRP</span>
           <span class="mrp">${arr[x].mrp}</span>
-          <span class="act">₹${arr[x].pri}*</span>
+          <span class="act">₹${arr[x].pri}</span>
         </div>
       </div>
     </div>
