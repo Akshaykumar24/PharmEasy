@@ -570,6 +570,7 @@ header #header2 .righthead p {
   top: 69px;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 .sch_drop {
   width: 622px;
@@ -603,6 +604,7 @@ header #header2 .righthead p {
   top: 441px;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 .sch_drop1 {
   width: 473px;
