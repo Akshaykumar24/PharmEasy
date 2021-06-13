@@ -92,7 +92,7 @@
                 <p>Select Pincode</p>
                 <img src="https://image.flaticon.com/icons/png/128/25/25243.png" alt="" />
                 <div></div>
-                <input type="text" placeholder="e.g. Ecosprin, Telma or Colgate" class="Search" />
+                <input type="text" placeholder="e.g. Ecosprin, Telma or Colgate" class="Search" / id="search12345">
                 <a class="search" href="#"><img src="https://image.flaticon.com/icons/png/128/2089/2089805.png"
                         alt="" /></a>
             </div>
@@ -398,6 +398,35 @@
             </div>
         </div>
     </div>
+    <!-- drop out -->
+    <div class="srch_pop1">
+        <div class="sch_drop1" onclick="x4()">
+            <div class="sch_p12">
+                <p>Frequently Seached items</p>
+            </div>
+            <div class="srh_ps1">
+                <p>Econspin 75mg Strip of 14 Tablets</p>
+                <p>Shelcal 500mg Strip of 14 Tablets</p>
+                <p>Ecosprin AV 75mg Strip of 15 Capsules</p>
+                <p>Evion 400mg Strip of 10 Capsules</p>
+                <p>Pan 40mg 15's Tab</p>
+                <p>Shelcal 500mg Strip of 14 Tablets</p>
+                <p>Ecosprin AV 75mg Strip of 15 Capsules</p>
+                <p>Evion 400mg Strip of 10 Capsules</p>
+                <p>Pan 40mg 15's Tab</p>
+                <p>New Celin 500mg Tablets 25's</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("search12345").addEventListener("click", function () {
+
+            document.querySelector(".srch_pop1").style.display = "block";
+        });
+        function x4() {
+            document.querySelector(".srch_pop1").style.display = "none";
+        }
+    </script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="/path/to/flickity.pkgd.min.js"></script>
 </body>
