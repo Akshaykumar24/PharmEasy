@@ -594,6 +594,39 @@ header #header2 .righthead p {
 .srh_ps > p {
   margin-bottom: 20px;
 }
+/* order */
+.srch_pop1 {
+  /* background: rgba(0, 0, 0, 0.6); */
+  width: 100%;
+  height: 660%;
+  position: absolute;
+  top: 440px;
+  justify-content: center;
+  align-items: center;
+}
+.sch_drop1 {
+  width: 473px;
+  height: 300px;
+  background: white;
+  margin-left: 460px;
+  margin-top: -14px;
+  overflow-x: hidden;
+}
+.sch_drop1 > .sch_p12 {
+  width: 100%;
+  padding: 5px;
+  height: 35px;
+  padding-left: 20px;
+  background: rgb(244, 247, 251);
+}
+.srh_ps1 {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+.srh_ps1 > p {
+  margin-bottom: 20px;
+}
 .ref_con {
   height: 440px;
   width: 350px;

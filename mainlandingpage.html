@@ -48,7 +48,7 @@
   </head>
 
   <body>
-    <header>
+    <header >
       <div id="header1">
         <img
           src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png"
@@ -1014,6 +1014,24 @@
 </script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="/path/to/flickity.pkgd.min.js"></script>
+    <!-- hiding header -->
+    <script>
+      $(document).ready(function(){
+  var scrollTop = 0;
+  $(window).scroll(function(){
+    scrollTop = $(window).scrollTop();
+     $('.counter').html(scrollTop);
+    
+    if (scrollTop >= 100) {
+      $('#global-nav').addClass('scrolled-nav');
+    } else if (scrollTop < 100) {
+      $('#global-nav').removeClass('scrolled-nav');
+    } 
+    
+  }); 
+  
+});
+    </script>
   </body>
 </html>
 <script src="login.js"></script>
