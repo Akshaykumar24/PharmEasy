@@ -96,6 +96,7 @@ function go() {
   var b = ran();
   var c = ran();
   var d = ran();
+  alert(`Your OTP is ${a} ${b} ${c} ${d}`);
   console.log(a, b, c, d);
   parent.innerHTML = `
     <h4 style="padding-left:20px"> Enter OTP has been sent to ${num}</h4>
@@ -123,6 +124,7 @@ function logged(a, b, c, d) {
   let o2 = document.getElementById("otp2").value;
   let o3 = document.getElementById("otp3").value;
   let o4 = document.getElementById("otp4").value;
+
   console.log(o1, o2, o3, o4);
   if (o1 == a && o2 == b && o3 == c && o4 == d) {
     loog = true;

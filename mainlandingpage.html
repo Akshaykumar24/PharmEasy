@@ -48,7 +48,7 @@
   </head>
 
   <body>
-    <header>
+    <header >
       <div id="header1">
         <img
           src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png"
@@ -161,7 +161,7 @@
     </div>
 
     <div id="svgs">
-      <div id="insvg1" class="fon">
+      <div id="insvg1" class="fon" onclick="(location.href ='view_cart.html')">
         <h3>Order Medicines</h3>
         <button>Order Now</button>
       </div>
@@ -927,8 +927,8 @@
     </div>
 <!-- pincode -->
 <div class="pin_pop">
-  <div class="pin_cont" onclick="x2()">
-    <div class="cross121">
+  <div class="pin_cont" >
+    <div class="cross121" onclick="x2()">
       <p>X</p>
     </div>
     <div class="pin_loc"><h2>Choose your Location</h2></div>
@@ -1014,6 +1014,24 @@
 </script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="/path/to/flickity.pkgd.min.js"></script>
+    <!-- hiding header -->
+    <script>
+      $(document).ready(function(){
+  var scrollTop = 0;
+  $(window).scroll(function(){
+    scrollTop = $(window).scrollTop();
+     $('.counter').html(scrollTop);
+    
+    if (scrollTop >= 100) {
+      $('#global-nav').addClass('scrolled-nav');
+    } else if (scrollTop < 100) {
+      $('#global-nav').removeClass('scrolled-nav');
+    } 
+    
+  }); 
+  
+});
+    </script>
   </body>
 </html>
 <script src="login.js"></script>
