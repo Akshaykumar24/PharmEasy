@@ -179,7 +179,8 @@
   let arr = JSON.parse(localStorage.getItem("pharmcart"));
   let sum = 0;
   for (var i = 0; i < arr.length; i++) {
-    sum += arr[i].pri;
+    sum += arr[i].pri * Number(arr[i].qty);
+    console.log(sum, arr[i].pri, Number(arr[i].qty));
   }
   let del = 0;
   if (sum > 500) {

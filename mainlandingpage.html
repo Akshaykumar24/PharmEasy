@@ -48,7 +48,7 @@
   </head>
 
   <body>
-    <header >
+    <header>
       <div id="header1">
         <img
           src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png"
@@ -60,15 +60,17 @@
           <p>Select Pincode</p>
           <img
             src="https://image.flaticon.com/icons/png/128/25/25243.png"
-            alt="" id="useme1234"
+            alt=""
+            id="useme1234"
           />
           <div></div>
           <div>
-          <input
-            type="text"
-            placeholder="Search for Medicines / Healthcare Products"
-            class="Search" id="search1234"
-          />
+            <input
+              type="text"
+              placeholder="Search for Medicines / Healthcare Products"
+              class="Search"
+              id="search1234"
+            />
           </div>
           <a class="search" href="#"
             ><img
@@ -108,15 +110,11 @@
           />
           <p><a href="offer.html" style="color: white">Offers</a></p>
 
-          <img
-            src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg"
-            onclick="pop()"
-          />
-          <p>
-            <a href="#" style="color: white" id="useme" onclick="pop()"
-              >Login/Signup</a
-            >
+          <img src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg" />
+          <p id="makemeuser">
+            <a href="#" style="color: white" id="useme">Login/Signup</a>
           </p>
+          <p id="useruser">User</p>
 
           <img
             src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg"
@@ -900,7 +898,7 @@
         </div>
       </div>
     </div>
-<!-- prescriptions -->
+    <!-- prescriptions -->
 
     <div class="refer">
       <div class="ref_con">
@@ -908,13 +906,16 @@
           <p>X</p>
         </div>
         <div class="pre_1">
-        <div class="first_pre">
-          <h2>Don't have a prescriptions?</h2>
-          <h4>Don't worry!</h4>
-        </div>
-        <div class="img_pre">
-          <img src="https://assets.pharmeasy.in/web-assets/dist/6e51a3f7.svg" alt="">
-        </div>
+          <div class="first_pre">
+            <h2>Don't have a prescriptions?</h2>
+            <h4>Don't worry!</h4>
+          </div>
+          <div class="img_pre">
+            <img
+              src="https://assets.pharmeasy.in/web-assets/dist/6e51a3f7.svg"
+              alt=""
+            />
+          </div>
         </div>
         <div class="pre_2">
           <p>Follow these steps:</p>
@@ -925,57 +926,107 @@
         </div>
       </div>
     </div>
-<!-- pincode -->
-<div class="pin_pop">
-  <div class="pin_cont" >
-    <div class="cross121" onclick="x2()">
-      <p>X</p>
+    <!-- pincode -->
+    <div class="pin_pop">
+      <div class="pin_cont">
+        <div class="cross121" onclick="x2()">
+          <p>X</p>
+        </div>
+        <div class="pin_loc"><h2>Choose your Location</h2></div>
+        <div class="pin_inp">
+          <input type="text" placeholder="Enter PIN Code" />
+          <button>Check</button>
+        </div>
+        <div class="pin_box1">
+          <img
+            src="https://assets.pharmeasy.in/web-assets/dist/ff969f07.svg"
+            alt=""
+          />
+          <p>Login to View Address</p>
+        </div>
+        <div class="pin_box2">
+          <img
+            src="https://assets.pharmeasy.in/web-assets/dist/90ee736b.svg"
+            alt=""
+          />
+          <p>Serving more than 1,000 towns and cities in india</p>
+        </div>
+        <div class="pin_box3">
+          <img
+            src="https://assets.pharmeasy.in/web-assets/dist/0c22e009.svg?dim=0x32&dpr=1.25&q=100"
+            alt=""
+          />
+          <p>Over 30,00,000 orders safely delivered</p>
+        </div>
+      </div>
     </div>
-    <div class="pin_loc"><h2>Choose your Location</h2></div>
-    <div class="pin_inp">
-      <input type="text" placeholder="Enter PIN Code">
-      <button>Check</button>
+    <!-- search pop -->
+    <div class="srch_pop">
+      <div class="sch_drop" onclick="x3()">
+        <div class="sch_p1">
+          <p>Frequently Seached items</p>
+        </div>
+        <div class="srh_ps">
+          <p>Econspin 75mg Strip of 14 Tablets</p>
+          <p>Shelcal 500mg Strip of 14 Tablets</p>
+          <p>Ecosprin AV 75mg Strip of 15 Capsules</p>
+          <p>Evion 400mg Strip of 10 Capsules</p>
+          <p>Pan 40mg 15's Tab</p>
+          <p>Shelcal 500mg Strip of 14 Tablets</p>
+          <p>Ecosprin AV 75mg Strip of 15 Capsules</p>
+          <p>Evion 400mg Strip of 10 Capsules</p>
+          <p>Pan 40mg 15's Tab</p>
+          <p>New Celin 500mg Tablets 25's</p>
+        </div>
+      </div>
     </div>
-    <div class="pin_box1">
-      <img src="https://assets.pharmeasy.in/web-assets/dist/ff969f07.svg" alt="">
-      <p>Login to View Address</p>
+    <!-- user dropdown -->
+    <div id="close_user">
+      <div class="user_dropout"></div>
+      <div class="form_user">
+        <div class="input_user">
+          <p onclick="(location.href ='signup.html')">My Orders</p>
+          <p onclick="(location.href ='signup.html')">My Refills</p>
+          <p onclick="(location.href ='signup.html')">Medical Records</p>
+          <p onclick="(location.href ='signup.html')">My Profile</p>
+          <p onclick="(location.href ='signup.html')">Wallet</p>
+          <p onclick="(location.href ='signup.html')">Refer & Earn</p>
+          <p onclick="(location.href ='signup.html')">Notification</p>
+          <p onclick="(location.href ='mainlandingpage.html')">Log Out</p>
+        </div>
+      </div>
     </div>
-    <div class="pin_box2">
-      <img src="https://assets.pharmeasy.in/web-assets/dist/90ee736b.svg" alt="">
-      <p>Serving more than 1,000 towns and cities in india</p>
-    </div>
-    <div class="pin_box3">
-      <img src="https://assets.pharmeasy.in/web-assets/dist/0c22e009.svg?dim=0x32&dpr=1.25&q=100" alt="">
-      <p>Over 30,00,000 orders safely delivered </p>
-    </div>
-  </div>
-</div>
-<!-- search pop -->
-<div class="srch_pop">
-  <div class="sch_drop" onclick="x3()">
-     <div class="sch_p1">
-       <p>Frequently Seached items</p>
-     </div>
-     <div class="srh_ps">
-       <p>Econspin 75mg Strip of 14 Tablets</p>
-       <p>Shelcal 500mg Strip of 14 Tablets</p>
-       <p>Ecosprin AV 75mg Strip of 15 Capsules</p>
-       <p>Evion 400mg Strip of 10 Capsules</p>
-       <p>Pan 40mg 15's Tab</p>
-      <p>Shelcal 500mg Strip of 14 Tablets</p>
-      <p>Ecosprin AV 75mg Strip of 15 Capsules</p>
-      <p>Evion 400mg Strip of 10 Capsules</p>
-      <p>Pan 40mg 15's Tab</p>
-       <p>New Celin 500mg Tablets 25's</p>
-     </div>
-  </div>
-</div>
-<!-- login script -->
     <script>
-      document.getElementById("useme").addEventListener("click", function () {
-        
-        document.querySelector(".popup").style.display = "block";
-      });
+      let logg = document.getElementById("useruser");
+      let logg1 = 0;
+      logg.addEventListener("mouseover", cl);
+      function cl() {
+        logg1++;
+        if (logg1 % 2 == 0) {
+          let closer = (document.getElementById("close_user").style.display =
+            "block");
+        } else {
+          let closer = (document.getElementById("close_user").style.display =
+            "none");
+        }
+      }
+      // logg.addEventListener("mouseout", clo);
+      // function clo() {
+      //   logg1++;
+      //   if (logg1 % 2 == 0) {
+      //     let closer = (document.getElementById("close_user").style.display =
+      //       "none");
+      //   }
+      // }
+    </script>
+
+    <!-- login script -->
+    <script>
+      document
+        .getElementById("makemeuser")
+        .addEventListener("click", function () {
+          document.querySelector(".popup").style.display = "block";
+        });
 
       function x() {
         document.querySelector(".popup").style.display = "none";
@@ -984,7 +1035,6 @@
     <!-- prescription script -->
     <script>
       document.getElementById("useme12").addEventListener("click", function () {
-        
         document.querySelector(".refer").style.display = "block";
       });
 
@@ -992,45 +1042,45 @@
         document.querySelector(".refer").style.display = "none";
       }
     </script>
-<!-- pincode -->
-<script>
-  document.getElementById("useme1234").addEventListener("click", function () {
-
-    document.querySelector(".pin_pop").style.display = "block";
-  });
- function x2() {
-    document.querySelector(".pin_pop").style.display = "none";
-  }
-</script>
-<!-- search -->
-<script>
-  document.getElementById("search1234").addEventListener("click", function () {
-
-    document.querySelector(".srch_pop").style.display = "block";
-  });
-  function x3() {
-    document.querySelector(".srch_pop").style.display = "none";
-  }
-</script>
+    <!-- pincode -->
+    <script>
+      document
+        .getElementById("useme1234")
+        .addEventListener("click", function () {
+          document.querySelector(".pin_pop").style.display = "block";
+        });
+      function x2() {
+        document.querySelector(".pin_pop").style.display = "none";
+      }
+    </script>
+    <!-- search -->
+    <script>
+      document
+        .getElementById("search1234")
+        .addEventListener("click", function () {
+          document.querySelector(".srch_pop").style.display = "block";
+        });
+      function x3() {
+        document.querySelector(".srch_pop").style.display = "none";
+      }
+    </script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="/path/to/flickity.pkgd.min.js"></script>
     <!-- hiding header -->
     <script>
-      $(document).ready(function(){
-  var scrollTop = 0;
-  $(window).scroll(function(){
-    scrollTop = $(window).scrollTop();
-     $('.counter').html(scrollTop);
-    
-    if (scrollTop >= 100) {
-      $('#global-nav').addClass('scrolled-nav');
-    } else if (scrollTop < 100) {
-      $('#global-nav').removeClass('scrolled-nav');
-    } 
-    
-  }); 
-  
-});
+      $(document).ready(function () {
+        var scrollTop = 0;
+        $(window).scroll(function () {
+          scrollTop = $(window).scrollTop();
+          $(".counter").html(scrollTop);
+
+          if (scrollTop >= 100) {
+            $("#global-nav").addClass("scrolled-nav");
+          } else if (scrollTop < 100) {
+            $("#global-nav").removeClass("scrolled-nav");
+          }
+        });
+      });
     </script>
   </body>
 </html>
