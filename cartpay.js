@@ -59,7 +59,8 @@ if (arr == null) {
       </div>`;
 } else {
   for (var i = 0; i < arr.length; i++) {
-    sum += arr[i].pri;
+    console.log(sum, arr[i].pri, arr[i].qty);
+    sum += arr[i].pri * Number(arr[i].qty);
   }
   let del = 0;
   if (sum > 500) {
@@ -123,7 +124,7 @@ function app(arr) {
       </div>
       <div class="both">
         <div class="lef">
-          <select class="qty" id="sel">
+          <select class="qty" id="sel${x}" onchange="selectme(${x})">
             <option value="1">QTY</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -140,14 +141,14 @@ function app(arr) {
         <div class="rig">
           <h5>${Math.round(arr[x].off * 100)}% OFF</h5>
           <span>MRP</span>
-          <span class="mrp">${arr[x].mrp}</span>
-          <span class="act">₹${arr[x].pri}</span>
+          <span class="mrp" id="mrp1${x}">${arr[x].mrp}</span>
+          <span class="act" id="pri1${x}">₹${arr[x].pri}</span>
         </div>
       </div>
     </div>
   </div>
       `;
-
+    console.log(document.getElementById(`sel${x}`));
     div.setAttribute("class", "qtycard");
     div.setAttribute("id", `card${x}`);
     // let name = document.createElement("h3");
@@ -249,4 +250,24 @@ function dele(x) {
         />
       </div>`;
   }
+}
+
+function selectme(x) {
+  let arr = JSON.parse(localStorage.getItem("pharmcart"));
+  let it = document.getElementById(`sel${x}`).value;
+  console.log(it);
+  let mrp = document.getElementById(`mrp1${x}`);
+  let pri = document.getElementById(`pri1${x}`);
+  mrp.textContent = `${arr[x].mrp * it}`;
+  pri.textContent = `₹${arr[x].pri * it}`;
+  arr[x].qty = it;
+  console.log(arr[x]);
+  let sum = 0;
+  for (var i = 0; i < arr.length; i++) {
+    console.log(sum, arr[i].pri, Number(arr[i].qty));
+    sum += arr[i].pri * Number(arr[i].qty);
+  }
+  document.getElementById("cartvalue").innerText = `₹${sum}`;
+  document.getElementById("totalcart").innerText = `₹${sum}`;
+  localStorage.setItem("pharmcart", JSON.stringify(arr));
 }

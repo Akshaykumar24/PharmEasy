@@ -781,10 +781,9 @@ header #header2 .righthead p {
   justify-content: space-between;
   margin: auto;
 }
-/* #close_user {
-
-
-} */
+#close_user {
+  display: none;
+}
 .user_dropout {
   width: 0;
   height: 0;

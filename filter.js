@@ -63,7 +63,7 @@ function run(x) {
   var mrp = Math.floor(pri / (1 - off));
   var stock = Math.round(Math.random() * 100) / 100;
   var count = x;
-  var qty = 0;
+  var qty = 1;
   box.innerHTML = `
     <img src="${imag}" class="boximg"/>
     <h3 id="tag${x}" class="boxtag">${taga}</h3>
