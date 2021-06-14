@@ -1,14 +1,14 @@
 .qtycard {
-  width: 90%;
+  width: 100%;
 }
 #carter {
   margin: 0 15%;
 }
 #cont {
-  width: 50%;
+  width: 60%;
 }
 #butcont {
-  padding-left: 150px;
+  padding-left: 100px;
   width: 300px;
 }
 #butcont > button {
