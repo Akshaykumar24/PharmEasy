@@ -781,7 +781,13 @@ header #header2 .righthead p {
   justify-content: space-between;
   margin: auto;
 }
+<<<<<<< HEAD
 
+=======
+#close_user {
+  display: none;
+}
+>>>>>>> fa421b7b64be30c6905b49ea7d59593bfda96767
 .user_dropout {
   width: 0;
   height: 0;

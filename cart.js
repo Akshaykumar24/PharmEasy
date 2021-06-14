@@ -75,11 +75,11 @@ function cartme() {
       return;
     } else {
       arr.push(prod);
-      alert("Medicine Successfully Added to your cart");
-      document.getElementById("carted").innerText = "Added to Cart";
+
       //   window.location.href = "index.html";
     }
   }
-
+  alert("Medicine Successfully Added to your cart");
+  document.getElementById("carted").innerText = "Added to Cart";
   localStorage.setItem("pharmcart", JSON.stringify(arr));
 }

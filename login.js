@@ -129,35 +129,24 @@ function logged(a, b, c, d) {
   if (o1 == a && o2 == b && o3 == c && o4 == d) {
     loog = true;
 
-    let profile = document.createElement("p");
-    profile.innerText = "Fuck Yeah";
-    let loguser = document.getElementById("useme");
-    loguser.append("profile");
-    // let par = document.getElementById("rit");
-    // par.insertBefore(loguser, profile);
-
-    window.location.href = "mainlandingpage.html";
-
-    change();
+    document.querySelector(".popup").style.display = "none";
+    //Never use this as it refreshes the whole effin page
+    //window.location.href = "mainlandingpage.html";
+    console.log(loog);
+    let ruser = document.getElementById("useruser");
+    ruser.style.display = "block";
+    let logruser = document.getElementById("makemeuser");
+    logruser.style.display = "none";
   } else {
     alert("Enter Valid Number and OTP sent");
   }
 }
 
-function change() {
-  let loguser = document.getElementById("useme");
-  console.log(loguser);
+// function change() {
+//   let loguser = document.getElementById("useme");
+//   console.log(loguser);
 
-  loguser.innerText = "User";
-}
-
-if (loog) {
-  let loguser = document.getElementById("useme");
-  console.log(loguser, loog);
-
-  loguser.innerText = "User";
-} else {
-  console.log(loog);
-  let loguser = document.getElementById("useme");
-  console.log(loguser, loog);
-}
+//   loguser.innerText = "User";
+// }
+let ruser = document.getElementById("useruser");
+ruser.style.display = "none";
