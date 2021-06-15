@@ -81,11 +81,10 @@
             src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg"
             onclick="pop()"
           />
-          <p>
-            <a href="#" style="color: white" id="useme" onclick="pop()"
-              >Login/Signup</a
-            >
+          <p id="makemeuser">
+            <a href="#" style="color: white" id="useme">Login/Signup</a>
           </p>
+          <p id="useruser">User</p>
 
           <img
             src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg"
@@ -319,5 +318,12 @@
 </html>
 <script>
   let del = document.getElementById("deliby");
-  console.log(Date);
+  let d = new Date();
+  d = d.toString().split(" ");
+  console.log(d);
+  del.innerHTML = `Delivery By:<br />${
+    Math.floor(Math.random() * 7) + Number(d[2])
+  }th of ${d[1]}`;
 </script>
+<script src="login.js"></script>
+<script src="signup.js"></script>
