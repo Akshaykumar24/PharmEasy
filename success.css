@@ -46,14 +46,14 @@
   border: none;
 }
 #diag {
+  height: 160px;
   margin-top: 100px;
   border: 1px solid gray;
   border-radius: 10px;
+  background-image: url("imag/suc.png");
+  background-size: contain;
 }
-#diag > img {
-  width: 100%;
-  margin: auto;
-}
+
 #rig > button {
   width: 100%;
   margin-top: 80px;

@@ -113,20 +113,14 @@
           </div>
         </div>
         <div id="l2">
-          <div>Delivery By:<br />15th to 17th of this month</div>
+          <div id="deliby">Delivery By:<br />15th to 17th of this month</div>
           <div>
             <button>View Details</button>
           </div>
         </div>
       </div>
       <div id="rig">
-        <div id="diag">
-          <img
-            src="PharmEasy/imag/suc.png"
-            alt=""
-            onclick="(location.href='diagnose.html')"
-          />
-        </div>
+        <div id="diag" onclick="(location.href='diagnose.html')"></div>
         <button onclick="(location.href='mainlandingpage.html')">
           Go Back To Home
         </button>
@@ -323,3 +317,7 @@
     </div>
   </body>
 </html>
+<script>
+  let del = document.getElementById("deliby");
+  console.log(Date);
+</script>
