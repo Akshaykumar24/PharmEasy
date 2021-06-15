@@ -31,7 +31,7 @@
             </h4>
           </div>
           <div>
-            <input type="radio" />
+            <input type="radio" name="money" />
           </div>
         </div>
 
@@ -49,7 +49,7 @@
             </h4>
           </div>
           <div>
-            <input type="radio" />
+            <input type="radio" name="money"/>
           </div>
         </div>
 
@@ -64,7 +64,7 @@
             <p>PhonePe</p>
           </div>
           <div>
-            <input type="radio" />
+            <input type="radio" name="money" />
           </div>
         </div>
         <hr />
@@ -144,10 +144,11 @@
             src="https://consumer-app-images.pharmeasy.in/payment-icons/cod.png"
           />
           <p>Cash on Delivery</p>
+          <input type="radio"  class="new" name="money" />
         </div>
         <h5>Valid once per user on minimum purchase of Rs.100.</h5>
         <hr />
-        <button id="place" onclick="(location.href='success.html')">
+        <button id="place" name="money" onclick="(location.href='success.html')">
           Place Order
         </button>
       </div>
@@ -157,16 +158,16 @@
           <div id="det">
             <div class="ord">
               <p>Cart value</p>
-              <p>₹${Math.round(sum)}</p>
+              <p>₹0</p>
             </div>
             <div class="ord">
               <p>Delivery Charge</p>
-              <p>${del}</p>
+              <p>₹0</p>
             </div>
             <hr />
             <div class="ord">
               <h3>Amount to be paid</h3>
-              <h3>₹${Math.round(sum) + del}</h3>
+              <h3>₹0</h3>
             </div>
           </div>
         </div>

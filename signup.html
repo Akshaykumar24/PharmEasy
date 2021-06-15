@@ -48,7 +48,7 @@
     
                 <img src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg" onclick="pop()" />
                 <p>
-                    <a href="#" style="color: white" id="useme" onclick="pop()">Login/Signup</a>
+                    <a href="#" style="color: white" id="useme" onclick="pop()">User</a>
                 </p>
     
                 <img src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg" alt=""
@@ -130,7 +130,7 @@
                 <img src="https://assets.pharmeasy.in/web-assets/dist/9a22e94b.svg"
                 alt="log"
                 />
-                <div class="bag_p">
+                <div class="bag_p"onclick="(location.href ='mainlandingpage.html')" >
                     <p>Log Out</p>
                 </div>
             </div>
@@ -147,15 +147,15 @@
             </div>
             <div class="entry">Mobile Number<span>*</span>
                 <br>
-                <input type="number" placeholder="Enter Your Mobile Number"/>
+                <input type="number" placeholder="Enter Your Mobile Number" id="mobile"/>
             </div>
             <div class="sub_for_offer">
                 <h4>Subscrib for offers!</h4>
                 <img src="https://assets.pharmeasy.in/web-assets/dist/746d1853.svg?dim=0x45&dpr=0.8533333539962769&q=100"/>
 
-                <input type="text" placeholder="Enter Your Email"/>
+                <input type="text" placeholder="Enter Your Email" id="email"/>
                 <br>
-                <button type="submit">Subscribe</button>
+                <button  onclick="sub()" type="submit">Subscribe</button>
             </div>
             <button type="submit" id="save">
                 save
@@ -283,4 +283,7 @@
         </div>
     </div>
 </body>
+<script src="signup.js">
+    
+</script>
 </html>
