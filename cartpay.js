@@ -197,6 +197,9 @@ function dele(x) {
   card.remove();
   localStorage.setItem("pharmcart", JSON.stringify(arr));
   if (arr.length == 0) {
+    localStorage.removeItem("pharmcart");
+  }
+  if (arr.length == null) {
     console.log("its comin");
     let car = document.getElementById("carter");
     car.innerHTML = `<div class="cart_box">
