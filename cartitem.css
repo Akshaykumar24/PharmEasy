@@ -84,12 +84,18 @@
   padding-left: 15px;
 }
 #coup {
+  width: 330px;
+  height: 30px;
+  margin: auto;
   background-color: white;
   color: rgb(16, 132, 126);
   border: 1px solid rgb(16, 132, 126);
   font-size: 16px;
   font-weight: 700;
   border-radius: 6px;
+  text-align: center;
+  padding: 10px;
+  margin-left: 30px;
 }
 hr {
   width: 350px;
@@ -123,4 +129,23 @@ hr {
 .act {
   font-size: 18px;
   font-weight: 700;
+}
+#coin {
+  width: 200px;
+  height: 40px;
+  margin: 5px;
+}
+#apply {
+  width: 200px;
+  height: 40px;
+  margin: 5px;
+  padding: 10px;
+}
+#coo {
+  margin-left: 30px;
+}
+.coups {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
 }
