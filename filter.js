@@ -15,6 +15,17 @@ var imgarr = [
   "https://cdn01.pharmeasy.in/dam/products_otc/C02103/jziki-jzk-301-pulse-oximeter-2-1620207350.jpg?dim=200x0&dpr=1.25&q=100",
   "https://cdn01.pharmeasy.in/dam/products_otc/Z36722/beurer-ft-09-1-clinical-thermometer-2-1606819406.jpg?dim=200x0&dpr=1.25&q=100",
   "https://cdn01.pharmeasy.in/dam/products_otc/S03838/colgate-diabetics-special-toothpaste-for-diabetics-with-madhunashini-and-jamun-seed-extracts-sugar-free-toothpaste-70g-3-1620213216.jpg?dim=200x0&dpr=1.25&q=100",
+  "https://cdn01.pharmeasy.in/dam/products_otc/131679/one-touch-select-glucometer-test-strips-bottle-of-50-1-1619437056.jpg?dim=200x0&dpr=0.8533333539962769&q=100",
+  "https://cdn01.pharmeasy.in/dam/products_otc/I05582/dr-morepen-bg-03-glucometer-test-strips-box-of-50-1-1604484376.jpg?dim=200x0&dpr=0.8533333539962769&q=100",
+  "https://cdn01.pharmeasy.in/dam/products_otc/D70449/oxysat-finger-tip-pulse-oximeter-with-2-batteries-18-months-warranty-2-1608125076.jpg?dim=200x0&dpr=0.8533333539962769&q=100",
+  "https://cdn01.pharmeasy.in/dam/products_otc/B71749/liveasy-essentials-diabetic-orthopedic-black-slippers-men-size-uk-8-us-9-6.1-1601969730.jpg?dim=200x0&dpr=0.8533333539962769&q=100",
+  "https://cdn01.pharmeasy.in/dam/products_otc/I34686/prohance-d-vanilla-diabetes-care-powder-sugar-free-bottle-of-400-g-2-1619445473.jpg?dim=200x0&dpr=0.8533333539962769&q=100",
+  "https://cdn01.pharmeasy.in/dam/products_otc/266249/depura-60k-nano-vit-d-vitamin-drops-sugar-free-bottle-of-5-ml-2-1607418139.jpg?dim=200x0&dpr=0.8533333539962769&q=100",
+  "https://cdn01.pharmeasy.in/dam/products_otc/Q82571/lizol-floral-disinfectant-floor-cleaner-liquid-bottle-of-200-ml-2-1613392261.jpg?dim=200x0&dpr=0.8533333539962769&q=100",
+  "https://cdn01.pharmeasy.in/dam/products_otc/M03451/godrej-protekt-multipurpose-disinfectant-liquid-kills-999-germs-anti-bacterial-for-home-personal-hygiene-citrus-fragrance-500ml-2-1608733597.jpg?dim=200x0&dpr=0.8533333539962769&q=100",
+  "https://cdn01.pharmeasy.in/dam/products_otc/J75776/harpic-flushmatic-aquamarine-toilet-block-twin-pack-packet-of-100-g-2-1613637599.jpg?dim=200x0&dpr=0.8533333539962769&q=100",
+  "https://cdn01.pharmeasy.in/dam/products_otc/I48609/pee-safe-toilet-seat-sanitizer-spray-75-ml-multi-fragrance-mint-lavender-floral-pack-of-3-2-1616494161.jpg?dim=200x0&dpr=0.8533333539962769&q=100",
+  "https://cdn01.pharmeasy.in/dam/products_otc/H90887/pampers-baby-gentle-wet-wipes-with-aloe-97-pure-water-72-count-2-1607325713.jpg?dim=200x0&dpr=0.8533333539962769&q=100",
 ];
 
 //array of brands, medicine names
@@ -28,8 +39,23 @@ var tagarr = [
   "Bolghar",
   "Zandu Balm",
   "Zova",
+  "Lizol Power",
+  "Eno regular",
+  "cotton Buds",
+  "colgate",
+  "Disprin",
+  "Allout liquid",
+  "Pudin Hara",
+  "Nivea milk lotion",
+  "Nivea bath liquid",
+  "Dove hair care",
+  "Himalya Body Powder",
+  "D-protine vanilla",
+  "Live easy oethocare",
+  "Bandage +"
+
 ];
-var comparr = ["This", "That", "Here", "There"];
+var comparr = ["This", "That", "Here", "There","Balaji","L$T","Nestle","H$M","Aboot","Himalya","23Yards","ACCARE","CANDID","FASH","LUX","OLAY"];
 console.log(
   imgarr[Math.floor(Math.random() * imgarr.length)],
   tagarr[Math.floor(Math.random() * tagarr.length)],
