@@ -1,0 +1,117 @@
+#srch_btn_main {
+  display: flex;
+}
+.srch_btn_main1 {
+  width: 638px;
+  margin-top: 13px;
+  margin-left: 238px;
+}
+.srch_btn1 > p {
+  font-size: 21px;
+}
+.srch_cont1 {
+  border: 2px solid lightgrey;
+  display: flex;
+  height: 161px;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+.srch_img1 > img {
+  padding: 20px;
+}
+
+.srch_para1 {
+  width: 500px;
+}
+.srch_para1 > p:nth-child(1) {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.srch_para1 > p:nth-child(2) {
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+.srch_para1 > p:nth-child(3) {
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+.srch_bar1 > span {
+  padding-right: 22px;
+}
+.srch_bar1 > span > button {
+  width: 180px;
+  height: 41px;
+  background: deepskyblue;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: 68px;
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 23px;
+}
+
+.srch_bar12 {
+  color: white;
+  background-image: url(https://assets.pharmeasy.in/web-assets/dist/6aa9e076.png);
+  font-size: 8px;
+  padding: 5px;
+}
+
+.srch_para2 > p {
+  font-size: 18px;
+}
+
+.srch_cont2 > button {
+  width: 339px;
+  height: 42px;
+  border-radius: 5px;
+  font-size: 18px;
+  color: white;
+  background: cadetblue;
+  border: none;
+}
+.srch_cont12 {
+  border: 1px solid lightgrey;
+  margin-top: 28px;
+  width: 336px;
+  border-radius: 5px;
+  padding-left: 30px;
+}
+.src_fir1 {
+  display: flex;
+  margin-top: 17px;
+  margin-bottom: 17px;
+}
+.src_fir1 > p:nth-child(1) {
+  margin-right: 35px;
+  border-radius: 62px;
+  width: 20px;
+  height: 20px;
+  background: orange;
+  text-align: center;
+  align-items: center;
+  margin-top: 13px;
+}
+
+.srch_concon {
+  width: 400px;
+  margin-left: 105px;
+  margin-top: 21px;
+}
+.hori_line {
+  width: 300px;
+  height: -13px;
+  border: 1px solid lightgrey;
+  margin-bottom: 25px;
+}
+.veri_first {
+  display: flex;
+  align-items: center;
+}
+.veri_first > img {
+  width: 30px;
+  height: 30px;
+  margin-right: 33px;
+}
