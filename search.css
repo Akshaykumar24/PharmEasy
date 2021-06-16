@@ -42,9 +42,10 @@
 .srch_bar1 > span > button {
   width: 180px;
   height: 41px;
-  background: deepskyblue;
+  background: teal;
+  border: none;
   color: white;
-  border: 1px solid black;
+
   border-radius: 5px;
   margin-left: 68px;
   font-size: 19px;
