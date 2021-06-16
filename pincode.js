@@ -1334,5 +1334,5 @@ let pins = {
   591344: "Khangaon",
   591345: "Jamboti",
   591346: "Hudli",
+  412101: "pune",
 };
-console.log(pins[560054]);
