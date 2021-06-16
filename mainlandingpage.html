@@ -57,13 +57,13 @@
         />
 
         <div class="select">
-          <p>Select Pincode</p>
+          <p id="pinhere">Select Pincode</p>
           <img
             src="https://image.flaticon.com/icons/png/128/25/25243.png"
             alt=""
             id="useme1234"
           />
-          <div></div>
+
           <div>
             <input
               type="text"
@@ -163,7 +163,11 @@
         <h3>Order Medicines</h3>
         <button>Order Now</button>
       </div>
-      <div id="insvg2" class="fon" onclick="(location.href ='4.html')">
+      <div
+        id="insvg2"
+        class="fon"
+        onclick="(location.href ='hcareProduct.html')"
+      >
         <h3>HealthCare products</h3>
         <button>Order Now</button>
       </div>
@@ -934,14 +938,18 @@
         </div>
         <div class="pin_loc"><h2>Choose your Location</h2></div>
         <div class="pin_inp">
-          <input type="text" placeholder="Enter PIN Code" />
-          <button>Check</button>
+          <input type="text" placeholder="Enter PIN Code" id="pinc" />
+          <button onclick="cpin()">Check</button>
         </div>
-        <div class="pin_box1">
+        <div class="pin_box1" id="address90">
           <img
             src="https://assets.pharmeasy.in/web-assets/dist/ff969f07.svg"
             alt=""
           />
+          <p>Add New Address</p>
+        </div>
+        <div class="pin_box1">
+          <img src="https://assets.pharmeasy.in/web-assets/dist/ff969f07.svg" alt="" />
           <p>Login to View Address</p>
         </div>
         <div class="pin_box2">
@@ -992,10 +1000,92 @@
           <p onclick="(location.href ='signup.html')">Wallet</p>
           <p onclick="(location.href ='signup.html')">Refer & Earn</p>
           <p onclick="(location.href ='signup.html')">Notification</p>
-          <p onclick="(location.href ='mainlandingpage.html')">Log Out</p>
+          <p onclick="logout()">Log Out</p>
         </div>
       </div>
     </div>
+    <!-- address -->
+    <div class="pin_pop90">
+      <div class="pin_cont90">
+        <div class="cross12190" onclick="x90()">
+          <p>X</p>
+        </div>
+          <div class="adde_main1">
+            <div class="adde_cont1">
+              <p>Add New Address</p>
+            </div>
+            <div class="adde_cont2">
+              <img src="https://assets.pharmeasy.in/web-assets/dist/0c22e009.svg?dim=0x32&dpr=1.25&q=100" alt="">
+              <p>Items will be safely packed & Sanitized. Pay online for contactless delivery</p>
+            </div>
+            <form>
+              <div class="form_addre">
+                <p>Bill To*</p>
+                <input type="text" name="Bill no">
+                <p>The bill will be prepared against this name</p>
+              </div>
+              <div class="form_addre" >
+                <p>Mobile Number*</p>
+                <input type="text" name="Mobile Number">
+                <p>For all delivery related communication</p>
+              </div>
+              <div class="form_addre">
+                <p>Building Name and Flat Number*</p>
+                <input type="text" name="Flat number">
+              </div>
+              <div class="form_addre">
+                <p>Street Name*</p>
+                <input type="text" name="Street Number">
+              </div>
+              <div class="form_addre">
+                <p>Pincode*</p>
+                <input type="text" name="Pincode">
+                
+              </div>
+              <div>
+                <p>Address Type*</p>
+                <div class="span_addre1">
+                  <span>
+                    <input type="radio" name="same">
+                  </span>
+                  <span>
+                    <p>Home</p>
+                  </span>
+                  <span>
+                    <input type="radio" name="same">
+                  </span>
+                  <span>
+                    <p>Work</p>
+                  </span>
+                  <span>
+                    <input type="radio" name="same">
+                  </span>
+                  <span>
+                    <p>Others</p>
+                  </span>
+                </div>
+              </div>
+              <div class="save_addre1">
+                <button type="submit">
+                  Save
+                </button>
+              </div>
+            </form>
+          </div>
+      </div>
+    </div>
+    <!-- script adresss -->
+    <script>
+      document
+        .getElementById("address90")
+        .addEventListener("click", function () {
+          document.querySelector(".pin_pop90").style.display = "block";
+        });
+      function x90() {
+        document.querySelector(".pin_pop90").style.display = "none";
+      }
+    </script>
+    <!-- script starts -->
     <script>
       let logg = document.getElementById("useruser");
       let logg1 = 0;
@@ -1085,3 +1175,5 @@
   </body>
 </html>
 <script src="login.js"></script>
+<script src="signup.js"></script>
+<script src="pincode.js"></script>

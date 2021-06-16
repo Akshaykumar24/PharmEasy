@@ -32,8 +32,8 @@ header .select {
   border: none;
 }
 header .select p {
-  width: 140px;
-  font-size: 18px;
+  width: 180px;
+  font-size: 14px;
   color: rgb(16, 132, 126);
   margin-top: 13px;
   margin-left: 20px;
@@ -781,13 +781,9 @@ header #header2 .righthead p {
   justify-content: space-between;
   margin: auto;
 }
-<<<<<<< HEAD
-
-=======
 #close_user {
   display: none;
 }
->>>>>>> fa421b7b64be30c6905b49ea7d59593bfda96767
 .user_dropout {
   width: 0;
   height: 0;
@@ -821,4 +817,88 @@ header #header2 .righthead p {
 }
 .input_user > p:hover {
   background: rgb(231, 239, 250);
+}
+.pin_pop90 {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 660%;
+  position: fixed;
+  top: 0;
+  display: none;
+}
+.pin_cont90 {
+  height: 17%;
+  width: 420px;
+  background: white;
+  float: right;
+  margin-top: 0px;
+}
+.cross12190 {
+  color: white;
+  background: white;
+  width: 53px;
+  height: 50px;
+  font-size: 22px;
+  text-align: center;
+  padding: 9px;
+  color: black;
+  margin-top: 40px;
+  margin-left: -52px;
+  cursor: pointer;
+}
+.adde_main1 {
+  margin-left: 30px;
+  margin-top: -70px;
+}
+.adde_cont1 > p {
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.adde_cont2 {
+  display: flex;
+  background: skyblue;
+  width: 370px;
+  height: 50px;
+  padding: 14px;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.adde_cont2 > img {
+  width: 40px;
+  height: 30px;
+}
+.adde_cont2 > p {
+  margin-left: 14px;
+  padding-top: 13px;
+}
+.form_addre {
+  width: 370px;
+  margin-bottom: 10px;
+}
+.form_addre > p {
+  font-size: 15px;
+}
+.form_addre > input {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 8px;
+}
+.span_addre1 {
+  display: flex;
+}
+.span_addre1 > span {
+  margin-right: 25px;
+}
+.save_addre1 > button {
+  width: 80%;
+  margin-left: 10%;
+  height: 41px;
+  border-radius: 5px;
+  color: white;
+  font-size: 21px;
+  margin-top: 10px;
+  border: none;
+  background: teal;
 }

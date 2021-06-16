@@ -79,6 +79,10 @@ function go() {
   console.log("lets go");
   let num = document.getElementById("num").value;
   console.log(num);
+  if (num.length < 10 || num.length > 10) {
+    alert("Enter a valid Mobile Number");
+    return;
+  }
   let number = { num };
   let arr = JSON.parse(localStorage.getItem("pharmuser"));
   if (arr == null) {
@@ -137,6 +141,14 @@ function logged(a, b, c, d) {
     ruser.style.display = "block";
     let logruser = document.getElementById("makemeuser");
     logruser.style.display = "none";
+
+    let arr = JSON.parse(localStorage.getItem("pharmuser"));
+    let session = JSON.parse(localStorage.getItem("session"));
+    session = [];
+    let us = arr[arr.length - 1];
+    session.push(us);
+    localStorage.setItem("session", JSON.stringify(session));
+    console.log(session);
   } else {
     alert("Enter Valid Number and OTP sent");
   }
@@ -148,5 +160,19 @@ function logged(a, b, c, d) {
 
 //   loguser.innerText = "User";
 // }
+let session = JSON.parse(localStorage.getItem("session"));
 let ruser = document.getElementById("useruser");
 ruser.style.display = "none";
+if (session.length > 0) {
+  let ruser = document.getElementById("useruser");
+  ruser.style.display = "block";
+
+  let logruser = document.getElementById("makemeuser");
+  logruser.style.display = "none";
+}
+console.log(session[0]);
+
+if (session[0].user != null) {
+  console.log(ruser);
+  ruser.innerText = session[0].user;
+}

@@ -83,3 +83,14 @@ function cartme() {
   document.getElementById("carted").innerText = "Added to Cart";
   localStorage.setItem("pharmcart", JSON.stringify(arr));
 }
+
+let arr = JSON.parse(localStorage.getItem("pharmcart"));
+console.log(arr.length);
+let lang = 0;
+if (arr == null || arr.length == 0) {
+  lang = 0;
+} else {
+  lang = arr.length;
+}
+let sh = document.getElementById("showcart");
+sh.textContent = `${lang} Items in cart`;

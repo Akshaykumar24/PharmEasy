@@ -71,7 +71,23 @@ if (arr == null) {
   app(arr);
   let but = document.getElementById("butcont");
   but.innerHTML = `
-    <button id="coup">APPLY COUPON</button>
+    <input id="coup" type="text" ondblclick="appli()" placeholder="APPLY COUPON">
+     <div class="coups">
+        <p>Flat 20% Off</p>
+        <p>MASAI20</p>
+      </div>
+      <div class="coups">
+        <p>Flat 25% Off</p>
+        <p>MASAI25</p>
+      </div>
+      <div class="coups">
+        <p>Flat 30% Off</p>
+        <p>MASAI30</p>
+      </div>
+      <div class="coups">
+        <p>Flat 50% Off</p>
+        <p>MASAI50</p>
+      </div>
     <button id="proceed" onclick="(location.href ='paynow.html')">Proceed To Pay</button>
     <div id="fri">Free Delivery for Order Above 500</div>
     <h2>Order Summary</h2>
@@ -197,6 +213,9 @@ function dele(x) {
   card.remove();
   localStorage.setItem("pharmcart", JSON.stringify(arr));
   if (arr.length == 0) {
+    localStorage.removeItem("pharmcart");
+  }
+  if (arr.length == null) {
     console.log("its comin");
     let car = document.getElementById("carter");
     car.innerHTML = `<div class="cart_box">
@@ -270,4 +289,40 @@ function selectme(x) {
   document.getElementById("cartvalue").innerText = `₹${sum}`;
   document.getElementById("totalcart").innerText = `₹${sum}`;
   localStorage.setItem("pharmcart", JSON.stringify(arr));
+}
+
+// Apply Coupons Here
+let coop = 0;
+function appli() {
+  console.log("Hey ma");
+  let coup = document.getElementById("coup").value;
+  //console.log(coup);
+  let div = document.createElement("div");
+
+  let fin = document
+    .getElementById("totalcart")
+    .innerText.split("₹")
+    .map(Number)[1];
+  console.log(fin);
+  if (coup == "MASAI20") {
+    coop = fin * 0.8;
+  }
+  if (coup == "MASAI25") {
+    coop = fin * 0.75;
+  }
+  if (coup == "MASAI30") {
+    coop = fin * 0.7;
+  }
+  if (coup == "MASAI50") {
+    coop = fin * 0.5;
+  }
+  div.innerHTML = `
+  <hr/>
+  <div class="ord">
+        <h3>After applying Coupon</h3>
+        <h3 id="totcoup">₹${Math.round(coop)}</h3>
+      </div>
+  `;
+  let but = document.getElementById("butcont");
+  but.append(div);
 }
