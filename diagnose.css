@@ -178,54 +178,52 @@ h3 + h5,
   width: 80%;
   height: 60%;
 }
-.whole{
+.whole {
   width: 70%;
   margin: auto;
   margin-top: 50px;
 }
-.upload{
+.upload {
   display: flex;
-  margin:auto;
+  margin: auto;
   width: 100%;
-  
 }
-.pic{
+.pic {
   display: flex;
   border: 1px solid rgb(102, 99, 99);
-  width: 220px;
+  width: 200px;
   height: 75px;
+  font-size: 18px;
   margin: 15px 30px;
   border-radius: 50px;
 }
-.pic>img{
+.pic > img {
   width: 30px;
   height: 30px;
-  margin: 20px 25px;
+  margin: 25px 19px;
 }
-.pic>p{
-font-size: 20px;
-font-weight: 600;
-color: rgb(102, 99, 99);
+.pic > p {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(102, 99, 99);
 }
-.purple{
+.purple {
   margin: auto;
   width: 100%;
   height: 70px;
   border: 1px solid;
   display: flex;
-  margin:30px auto;
-  background-color: rgb(133,115,225);
+  margin: 30px auto;
+  background-color: rgb(133, 115, 225);
   color: white;
 }
-.purple>img{
+.purple > img {
   width: 50px;
   height: 40px;
   margin: 10px 20px;
 }
-.purple>p{
+.purple > p {
   margin-left: 20px;
   font-size: 20px;
   margin-bottom: 15px;
 }
-
-

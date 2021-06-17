@@ -4,6 +4,7 @@
 }
 #carterer {
   display: flex;
+  margin-left: 200px;
 }
 .cart_right {
   border: 1px soild black;
