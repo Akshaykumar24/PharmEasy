@@ -147,7 +147,7 @@
               <p>PROFILE SETTINGS</p>
               <p>Edit Profile</p>
               <p>Manage patients</p>
-              <p>Manage Address</p>
+              <p onclick="address()">Manage Address</p>
               <p>Manage Refunds</p>
             </div>
           </div>
@@ -181,8 +181,8 @@
         </div>
       </div>
       <div id="right_1">
-        <div class="name">Edit Profile</div>
-        <div class="edit_part">
+        <div class="name" id="editme">Edit Profile</div>
+        <div class="edit_part" id="showall">
           <div class="entry">
             Name<span>*</span>
             <br />

@@ -58,3 +58,14 @@ function savesess() {
   console.log(arr[0]);
   localStorage.setItem("session", JSON.stringify(arr));
 }
+
+function address() {
+  let name = document.getElementsByName("Bill no");
+  console.log(name);
+}
+function saveadd(e) {
+  e.preventDefault();
+  console.log("add");
+  let name = document.getElementsByName("Bill no");
+  console.log(name);
+}
