@@ -63,9 +63,11 @@ function address() {
   let name = document.getElementsByName("Bill no");
   console.log(name);
 }
-function saveadd(e) {
-  e.preventDefault();
+function saveadd() {
   console.log("add");
-  let name = document.getElementsByName("Bill no");
-  console.log(name);
+  let name = document.getElementsByName("Bill no")[0].value;
+  let flat = document.getElementsByName("Flat number")[0].value;
+  let street = document.getElementsByName("Street Number")[0].value;
+  let pin = document.getElementsByName("Pincode")[0].value;
+  console.log(name, flat, street, pin);
 }

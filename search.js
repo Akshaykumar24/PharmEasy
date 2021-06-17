@@ -101,6 +101,7 @@ function run(x, inp) {
   let btncart = document.getElementById(`adc${x}`);
   btncart.onclick = function (product) {
     let btid = btncart.getAttribute("id").split("adc")[1];
+
     console.log(btncart, btid);
     console.log(product);
     let cart = JSON.parse(localStorage.getItem("pharmcart"));
@@ -117,6 +118,8 @@ function run(x, inp) {
       if (btid == arr[i].count) {
         console.log(arr[i]);
         cart.push(arr[i]);
+        alert("Item added to cart");
+        btncart.innerText = "Added to Cart";
       }
     }
 
@@ -133,6 +136,12 @@ function run(x, inp) {
     //   }
     // }
   };
+}
+
+let itemincart = document.getElementById("itemincart");
+let cart = JSON.parse(localStorage.getItem("pharmcart"));
+if (cart.length != 0) {
+  itemincart.innerText = `${cart.length} items already in Cart`;
 }
 
 var imgarr = [

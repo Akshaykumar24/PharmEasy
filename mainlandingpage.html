@@ -1036,7 +1036,7 @@
             </div>
             <div class="form_addre">
               <p>Mobile Number*</p>
-              <input type="text" name="Mobile Number" />
+              <input type="text" name="Mobile Number" disabled />
               <p>For all delivery related communication</p>
             </div>
             <div class="form_addre">
@@ -1049,7 +1049,7 @@
             </div>
             <div class="form_addre">
               <p>Pincode*</p>
-              <input type="text" name="Pincode" />
+              <input type="text" name="Pincode" ondblclick="saveadd()" />
             </div>
             <div>
               <p>Address Type*</p>
@@ -1075,7 +1075,7 @@
               </div>
             </div>
             <div class="save_addre1">
-              <button onclick="saveadd(e)">Save</button>
+              <button>Save</button>
             </div>
           </form>
         </div>
@@ -1087,6 +1087,10 @@
         .getElementById("address90")
         .addEventListener("click", function () {
           document.querySelector(".pin_pop90").style.display = "block";
+          let num = document.getElementsByName("Mobile Number")[0];
+
+          let arr = JSON.parse(localStorage.getItem("session"));
+          num.placeholder = arr[0].num;
         });
       function x90() {
         document.querySelector(".pin_pop90").style.display = "none";
