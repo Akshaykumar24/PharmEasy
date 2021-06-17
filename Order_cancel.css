@@ -1,0 +1,130 @@
+.plusimg {
+    display: flex;
+    background-color: rgb(133, 115, 225);
+    width: 312px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  .plusimg > img {
+    width: 30px;
+    height: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+  }
+  .plusimg > p {
+    color: white;
+    padding-left: 10px;
+  }
+  #left_box {
+    height: 800px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    width: 312px;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  .pay_main {
+    display: flex;
+    margin-left: 300px;
+    margin-top: 60px;
+  }
+  #whole{
+      display: flex;
+  }
+  .name1 {
+    border-radius: 15px;
+    background: teal;
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+  }
+  .name1 > p {
+    text-align: center;
+    padding-top: 7px;
+  }
+  .bag {
+    padding: 7px;
+    display: flex;
+    margin-top: 15px;
+  }
+  
+  .bag > img {
+    margin-left: 10px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+  }
+  .bag_p {
+    margin-top: -15px;
+    margin-left: 20px;
+  }
+  .bag_p:nth-child(1) {
+    color: lightgrey;
+    padding-top: -20px;
+  }
+  .name {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+  .cancel{
+      margin: 50px 50px;
+      display: flex;
+      width: 312px;
+      height: 200px;
+      border: 1px solid rgb(201, 196, 196);
+      border-radius: 6px;
+  }
+  .cancel>img{
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      margin-left: 5px;
+  }
+  .d_order{
+      margin: 60px 30px;
+     
+  }
+  .d_order>.AllOrders{
+      width: 200px;
+      height: 40px;
+      border: 1px solid rgb(201, 196, 196);
+      border-radius: 5px;
+      color: rgb(53, 50, 50);
+
+  }
+  .AllOrders{
+      font-size: 25px;
+  }
+  .reorder{
+      display: flex;
+      margin-top: 40px;
+      font-size: 15px;
+      
+  }
+  .reorder>div:nth-child(2n){
+      background-color: teal;
+      margin-left: 40px;
+      font-size: 20px;
+      width: 100px;
+      height: 50px;
+     text-align: center;
+     border-radius: 6px;
+     color: white;
+
+  }
+  .cancel>div>span{
+      color: red;
+      margin-left: 25px;
+  }
+  .cancel>div>p{
+      margin: 10px 25px;
+      font-weight: 300;
+  }
+  .right>div{
+      margin-left: 100px;
+      margin-bottom: -20px;
+      color: rgb(63, 61, 61);
+  }
