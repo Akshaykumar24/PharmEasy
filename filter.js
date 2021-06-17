@@ -52,10 +52,26 @@ var tagarr = [
   "Himalya Body Powder",
   "D-protine vanilla",
   "Live easy oethocare",
-  "Bandage +"
-
+  "Bandage +",
 ];
-var comparr = ["This", "That", "Here", "There","Balaji","L$T","Nestle","H$M","Aboot","Himalya","23Yards","ACCARE","CANDID","FASH","LUX","OLAY"];
+var comparr = [
+  "This",
+  "That",
+  "Here",
+  "There",
+  "Balaji",
+  "L$T",
+  "Nestle",
+  "H$M",
+  "Aboot",
+  "Himalya",
+  "23Yards",
+  "ACCARE",
+  "CANDID",
+  "FASH",
+  "LUX",
+  "OLAY",
+];
 console.log(
   imgarr[Math.floor(Math.random() * imgarr.length)],
   tagarr[Math.floor(Math.random() * tagarr.length)],
