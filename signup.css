@@ -131,3 +131,25 @@
   font-size: 17px;
   border-radius: 5px;
 }
+
+.card1 {
+  border: 3px solid teal;
+  border-radius: 10px;
+  width: 37%;
+  margin: 3%;
+  padding: 3%;
+}
+.card1:hover {
+  box-shadow: 0px 1px 15px teal;
+}
+#address1 {
+  display: flex;
+  margin: 8% 3%;
+  box-shadow: 0px 1px 15px lightgrey;
+  flex-wrap: wrap;
+}
+.card1 > h4,
+.card1 > p,
+.card1 > h5 {
+  margin: 8px 0;
+}
