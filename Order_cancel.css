@@ -1,4 +1,4 @@
-.plusimg {
+/* .plusimg {
     display: flex;
     background-color: rgb(133, 115, 225);
     width: 312px;
@@ -68,63 +68,59 @@
   .name {
     font-size: 20px;
     padding-top: 20px;
-  }
-  .cancel{
-      margin: 50px 50px;
-      display: flex;
-      width: 312px;
-      height: 200px;
-      border: 1px solid rgb(201, 196, 196);
-      border-radius: 6px;
-  }
-  .cancel>img{
-      width: 50px;
-      height: 50px;
-      margin-right: 10px;
-      margin-left: 5px;
-  }
-  .d_order{
-      margin: 60px 30px;
-     
-  }
-  .d_order>.AllOrders{
-      width: 200px;
-      height: 40px;
-      border: 1px solid rgb(201, 196, 196);
-      border-radius: 5px;
-      color: rgb(53, 50, 50);
-
-  }
-  .AllOrders{
-      font-size: 25px;
-  }
-  .reorder{
-      display: flex;
-      margin-top: 40px;
-      font-size: 15px;
-      
-  }
-  .reorder>div:nth-child(2n){
-      background-color: teal;
-      margin-left: 40px;
-      font-size: 20px;
-      width: 100px;
-      height: 50px;
-     text-align: center;
-     border-radius: 6px;
-     color: white;
-
-  }
-  .cancel>div>span{
-      color: red;
-      margin-left: 25px;
-  }
-  .cancel>div>p{
-      margin: 10px 25px;
-      font-weight: 300;
-  }
-  .right>div{
-      margin-left: 100px;
-      margin-bottom: -20px;
-      color: rgb(63, 61, 61);
-  }
+  } */
+.cancel {
+  margin: 50px 50px;
+  display: flex;
+  width: 312px;
+  height: 200px;
+  border: 1px solid rgb(201, 196, 196);
+  border-radius: 6px;
+}
+.cancel > img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+.d_order {
+  margin: 60px 30px;
+}
+.d_order > .AllOrders {
+  width: 200px;
+  height: 40px;
+  border: 1px solid rgb(201, 196, 196);
+  border-radius: 5px;
+  color: rgb(53, 50, 50);
+}
+.AllOrders {
+  font-size: 25px;
+}
+.reorder {
+  display: flex;
+  margin-top: 40px;
+  font-size: 15px;
+}
+.reorder > div:nth-child(2n) {
+  background-color: teal;
+  margin-left: 40px;
+  font-size: 20px;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  border-radius: 6px;
+  color: white;
+}
+.cancel > div > span {
+  color: red;
+  margin-left: 25px;
+}
+.cancel > div > p {
+  margin: 10px 25px;
+  font-weight: 300;
+}
+.right > div {
+  margin-left: 100px;
+  margin-bottom: -20px;
+  color: rgb(63, 61, 61);
+}
