@@ -74,15 +74,15 @@ if (arr == null) {
     <input id="coup" type="text" ondblclick="appli()" placeholder="APPLY COUPON">
      <div class="coups">
         <p>Flat 20% Off</p>
-        <p>MASAI20</p>
+        <p>ACP20</p>
       </div>
       <div class="coups">
         <p>Flat 25% Off</p>
-        <p>MASAI25</p>
+        <p>VAN25</p>
       </div>
       <div class="coups">
         <p>Flat 30% Off</p>
-        <p>MASAI30</p>
+        <p>SWE30</p>
       </div>
       <div class="coups">
         <p>Flat 50% Off</p>
@@ -304,13 +304,13 @@ function appli() {
     .innerText.split("₹")
     .map(Number)[1];
   console.log(fin);
-  if (coup == "MASAI20") {
+  if (coup == "ACP20") {
     coop = fin * 0.8;
   }
-  if (coup == "MASAI25") {
+  if (coup == "VAN25") {
     coop = fin * 0.75;
   }
-  if (coup == "MASAI30") {
+  if (coup == "SWE30") {
     coop = fin * 0.7;
   }
   if (coup == "MASAI50") {
