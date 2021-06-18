@@ -3,8 +3,15 @@ console.log("Yes");
 function searchmed() {
   let inp = document.getElementById("search1234").value;
   console.log(inp);
+
   let arr = JSON.parse(localStorage.getItem("searchcart"));
-  localStorage.removeItem("searchcart");
+  if (arr == null) {
+    arr = [];
+  } else {
+    arr = JSON.parse(localStorage.getItem("searchcart"));
+  }
+  //localStorage.removeItem("searchcart");
+  localStorage.setItem("searchcart", JSON.stringify(arr));
   document.getElementById("searchfor").innerText = inp;
   let parent = document.getElementById("dodd");
   parent.innerHTML = "";
@@ -42,8 +49,8 @@ function run(x, inp) {
   box.setAttribute("class", "srch_cont1");
   box.setAttribute("id", `boxid${x}`);
 
-  var imag = imgarr[Math.floor(Math.random() * imgarr.length)];
-
+  // var imag = imgarr[Math.floor(Math.random() * imgarr.length)];
+  var imag = imgarr[Math.floor(Math.random() * n)];
   var company = comparr[Math.floor(Math.random() * comparr.length)];
   var taga = inp + " " + tagarr[Math.floor(Math.random() * tagarr.length)];
   var pri = Math.floor(Math.random() * 3000);
@@ -120,6 +127,7 @@ function run(x, inp) {
         cart.push(arr[i]);
         alert("Item added to cart");
         btncart.innerText = "Added to Cart";
+        break;
       }
     }
 
@@ -171,7 +179,7 @@ var imgarr = [
   "https://cdn01.pharmeasy.in/dam/products_otc/I48609/pee-safe-toilet-seat-sanitizer-spray-75-ml-multi-fragrance-mint-lavender-floral-pack-of-3-2-1616494161.jpg?dim=200x0&dpr=0.8533333539962769&q=100",
   "https://cdn01.pharmeasy.in/dam/products_otc/H90887/pampers-baby-gentle-wet-wipes-with-aloe-97-pure-water-72-count-2-1607325713.jpg?dim=200x0&dpr=0.8533333539962769&q=100",
 ];
-
+let n = imgarr.length;
 var comparr = [
   "This",
   "That",
