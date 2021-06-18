@@ -411,6 +411,9 @@
   mob.placeholder = session[0].num;
   let use1 = document.getElementById("username");
   console.log(use1);
-
-  use1.placeholder = session[0].user;
+  if (session[0].user == undefined) {
+    use1.placeholder = "Enter Your Name";
+  } else {
+    use1.placeholder = session[0].user;
+  }
 </script>
