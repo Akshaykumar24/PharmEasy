@@ -1334,5 +1334,5 @@ let pins = {
   591344: "Khangaon",
   591345: "Jamboti",
   591346: "Hudli",
-  412101: "pune",
+  412101: "Pune",
 };

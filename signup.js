@@ -1,4 +1,6 @@
 console.log("first_js");
+let name = document.getElementById("username");
+name.placeholder = "Enter Your name";
 
 function sub() {
   let name = document.getElementById("name").value;
