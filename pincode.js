@@ -8,7 +8,21 @@ function cpin() {
   let tobe = pins[pin];
   console.log(tobe);
   let pl = document.getElementById("pinhere");
-  pl.textContent = tobe;
+  if (tobe == undefined) {
+    alert("Currently not deliverable Here, But we'll be there soon!!!");
+    return;
+  } else {
+    let pinr = JSON.parse(localStorage.getItem("session"));
+    pinr[0].pin = tobe;
+    console.log(pinr[0]);
+    localStorage.setItem("session", JSON.stringify(pinr));
+    pl.textContent = tobe;
+  }
+}
+let pinr = JSON.parse(localStorage.getItem("session"));
+let pl = document.getElementById("pinhere");
+if (pinr[0].pin != null) {
+  pl.textContent = pinr[0].pin;
 }
 
 let pins = {
@@ -1019,7 +1033,7 @@ let pins = {
   583268: "Pragathinagar",
   583275: "Vidyanagar (Bellary)",
   583276: "K U Campus",
-  583277: "Kusthagi Kut",
+  583277: "Kusthagi",
   583278: "Dotihal",
   583279: "Tavargera",
   583280: "Hanumanhal",
