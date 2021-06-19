@@ -1,30 +1,3 @@
-function cpin() {
-  let pin = document.getElementById("pinc").value;
-  //console.log(pin.length);
-  if (pin.length < 6 || pin.length > 6) {
-    alert("Enter a vaalid Pincode");
-    return;
-  }
-  let tobe = pins[pin];
-  console.log(tobe);
-  let pl = document.getElementById("pinhere");
-  if (tobe == undefined) {
-    alert("Currently not deliverable Here, But we'll be there soon!!!");
-    return;
-  } else {
-    let pinr = JSON.parse(localStorage.getItem("session"));
-    pinr[0].pin = tobe;
-    console.log(pinr[0]);
-    localStorage.setItem("session", JSON.stringify(pinr));
-    pl.textContent = tobe;
-  }
-}
-let pinr = JSON.parse(localStorage.getItem("session"));
-let pl = document.getElementById("pinhere");
-if (pinr[0].pin != null) {
-  pl.textContent = pinr[0].pin;
-}
-
 let pins = {
   560001: "Vidhana Soudha",
   560002: "Bangalore City",
@@ -1350,3 +1323,33 @@ let pins = {
   591346: "Hudli",
   412101: "Pune",
 };
+
+function cpin() {
+  let pin = document.getElementById("pinc").value;
+  //console.log(pin.length);
+  if (pin.length < 6 || pin.length > 6) {
+    alert("Enter a vaalid Pincode");
+    return;
+  }
+  let tobe = pins[pin];
+  console.log(tobe);
+  let pl = document.getElementById("pinhere");
+  if (tobe == undefined) {
+    alert("Currently not deliverable Here, But we'll be there soon!!!");
+    return;
+  } else {
+    let pinr = JSON.parse(localStorage.getItem("session"));
+    pinr[0].pin = tobe;
+    console.log(pinr[0]);
+    localStorage.setItem("session", JSON.stringify(pinr));
+    pl.textContent = tobe;
+  }
+}
+let pinr = JSON.parse(localStorage.getItem("session"));
+
+console.log(pinr[0].pin);
+if (pinr[0].pin != null) {
+  let pl = document.getElementById("pinhere");
+  pl.innerHTML = `${pinr[0].pin}`;
+  console.log("what");
+}
