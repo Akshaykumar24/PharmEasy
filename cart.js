@@ -31,7 +31,7 @@ company.textContent = prod.company + " PVT LTD";
 
 actual.textContent = `₹${prod.pri}*`;
 orig.textContent = `₹${prod.mrp}`;
-off.textContent = `${prod.off * 100}% OFF`;
+off.textContent = `${Math.round(prod.off * 100)}% OFF`;
 
 if (prod.stock < 0.25) {
   stock.textContent = "Currently Unavailable, back in stock SOON";
