@@ -1,6 +1,6 @@
 # PharmEasy
 
-This is a working clone of the "Take it easy, Pharmeasy" apart from their catchy AD they also deliver medicines. To build this clone we have used HTML5, CSS3, Advanced Javascript, along with amazing Teammates. This was our first collaborative Project at MASAI, to which we're greatful for.
+This is a working clone of the "Take it easy, Pharmeasy" apart from their catchy AD they also deliver medicines. To build this clone we have used HTML5, CSS3, Advanced Javascript, along with amazing Teammates. This was our first collaborative Project at MASAI, to which we're grateful for.
 
 ## Pages Built
 
