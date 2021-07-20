@@ -76,9 +76,9 @@ function log() {
 }*/
 //starts from here----->
 function go() {
-  console.log("lets go");
+  //console.log("lets go");
   let num = document.getElementById("num").value;
-  console.log(num);
+  //console.log(num);
   if (num.length < 10 || num.length > 10) {
     alert("Enter a valid Mobile Number");
     return;
@@ -111,11 +111,25 @@ function go() {
     <input type="text" id="otp4"/>
     </div>
     <div class="resendflex">
-    <p>Change Number</p>
-    <p>Resend OTP</p>
+    <p onclick="numc()">Change Number</p>
+    <p onclick="resend(${a},${b},${c},${d})">Resend OTP</p>
     </div>
     <button class="go" onclick="logged(${a},${b},${c},${d})">Continue</button>
     `;
+}
+
+function numc() {
+  let parent = document.getElementById("entry");
+  //console.log(par);
+  //console.log("Return");
+  parent.innerHTML = `<input type="text" placeholder="Enter your Phone number" id="num" />
+          <button class="go" onclick="go()">Continue</button>
+`;
+}
+
+function resend(a, b, c, d) {
+  //console.log("Helloe");
+  alert(`Your OTP is ${a} ${b} ${c} ${d}`);
 }
 
 function ran() {

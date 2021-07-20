@@ -1,9 +1,10 @@
-body{
+* {
+  font-family: Open Sans, sans-serif !important;
+}
+body {
   margin: 0px;
   padding: 0px;
-  
 }
-
 #left {
   width: 500px;
 
@@ -102,7 +103,7 @@ p > span:nth-child(n + 1) {
   display: flex;
   justify-content: space-between;
 }
-.new{
+.new {
   float: right;
   margin-left: 300px;
   margin-top: 30px;
