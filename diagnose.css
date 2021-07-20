@@ -191,10 +191,10 @@ h3 + h5,
 .pic {
   display: flex;
   border: 1px solid rgb(102, 99, 99);
-  width: 200px;
+  width: 230px;
   height: 75px;
   font-size: 18px;
-  margin: 15px 30px;
+  margin: 15px 15px;
   border-radius: 50px;
 }
 .pic > img {
@@ -203,7 +203,7 @@ h3 + h5,
   margin: 25px 19px;
 }
 .pic > p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: rgb(102, 99, 99);
 }
