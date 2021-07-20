@@ -74,21 +74,21 @@ if (arr == null) {
     <input id="coup" type="text" ondblclick="appli()" placeholder="APPLY COUPON">
      <div class="coups">
         <p>Flat 20% Off</p>
-        <p>ACP20</p>
+        <p>AKSHAY20</p>
       </div>
       <div class="coups">
         <p>Flat 25% Off</p>
-        <p>VAN25</p>
+        <p>VANDNA25</p>
       </div>
       <div class="coups">
         <p>Flat 30% Off</p>
-        <p>SWE30</p>
+        <p>SWETHA30</p>
       </div>
       <div class="coups">
         <p>Flat 50% Off</p>
         <p>MASAI50</p>
       </div>
-    <button id="proceed" onclick="(location.href ='paynow.html')">Proceed To Pay</button>
+    <button id="proceed" onclick="logValidate()">Proceed To Pay</button>
     <div id="fri">Free Delivery for Order Above 500</div>
     <h2>Order Summary</h2>
     <div id="det">
@@ -107,6 +107,15 @@ if (arr == null) {
       </div>
     </div>
     `;
+}
+
+function logValidate() {
+  let x = localStorage.getItem("session");
+  if (x == undefined) {
+    alert("Please Log-In to Proceed");
+  } else {
+    window.location.href = "paynow.html";
+  }
 }
 
 function app(arr) {
@@ -193,7 +202,7 @@ function dele(x) {
   let arr = JSON.parse(localStorage.getItem("pharmcart"));
   console.log(arr[x]);
 
-  sum -= arr[x].pri;
+  //sum -= arr[x].pri * arr[x].qty;
   console.log(sum);
   if (sum > 500) {
     del = 0;
@@ -203,9 +212,9 @@ function dele(x) {
   let cartv = document.getElementById("cartvalue");
   let totalcart = document.getElementById("totalcart");
   let deli = document.getElementById("del500");
-  cartv.textContent = sum - arr[x].pri;
+  cartv.textContent = sum - arr[x].pri * arr[x].qty;
   deli.textContent = del;
-  totalcart.textContent = sum - arr[x].pri;
+  totalcart.textContent = sum - arr[x].pri * arr[x].qty;
 
   arr.splice(x, 1);
   console.log(arr.length);
@@ -214,8 +223,8 @@ function dele(x) {
   localStorage.setItem("pharmcart", JSON.stringify(arr));
   if (arr.length == 0) {
     localStorage.removeItem("pharmcart");
-  }
-  if (arr.length == null) {
+    // }
+    // if (arr.length == null) {
     console.log("its comin");
     let car = document.getElementById("carter");
     car.innerHTML = `<div class="cart_box">
@@ -281,7 +290,7 @@ function selectme(x) {
   pri.textContent = `₹${arr[x].pri * it}`;
   arr[x].qty = it;
   console.log(arr[x]);
-  let sum = 0;
+  sum = 0;
   for (var i = 0; i < arr.length; i++) {
     console.log(sum, arr[i].pri, Number(arr[i].qty));
     sum += arr[i].pri * Number(arr[i].qty);
@@ -294,7 +303,7 @@ function selectme(x) {
 // Apply Coupons Here
 let coop = 0;
 function appli() {
-  console.log("Hey ma");
+  //console.log("Hey ma");
   let coup = document.getElementById("coup").value;
   //console.log(coup);
   let div = document.createElement("div");
@@ -304,13 +313,13 @@ function appli() {
     .innerText.split("₹")
     .map(Number)[1];
   console.log(fin);
-  if (coup == "ACP20") {
+  if (coup == "AKSHAY20") {
     coop = fin * 0.8;
   }
-  if (coup == "VAN25") {
+  if (coup == "VANDNA25") {
     coop = fin * 0.75;
   }
-  if (coup == "SWE30") {
+  if (coup == "SWETHA30") {
     coop = fin * 0.7;
   }
   if (coup == "MASAI50") {
