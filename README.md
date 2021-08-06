@@ -48,5 +48,4 @@ This is a working clone of the "Take it easy, Pharmeasy" apart from their catchy
 10. Amount to be Paid and available Payment Modes Shown in the Payment
 11. Delivery Date to be shown in Transaction successful Page
 
-## Please do check out our Cloned Pharmeasy Website, and Go crazy and Order Whatever You Want !!!!!
-### Also the developer Coupons Available FOR FREE !!!
+## Please do check out our Cloned Pharmeasy Website !!!!!
