@@ -1,0 +1,21 @@
+.first_image .firstimage img {
+  width: 100%;
+  height: 280px;
+}
+.first_image .sentence h1 {
+  width: 75%;
+  height: 60px;
+  background-color: rgb(78, 190, 184);
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-left: 200px;
+  margin-top: 50px;
+  border-radius: 5px;
+  padding-top: 10px;
+}
+.first_image h2 {
+  margin-left: 200px;
+  margin-top: 50px;
+  font-size: 27px;
+}

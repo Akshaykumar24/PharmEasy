@@ -1,0 +1,81 @@
+.medic > h1 {
+  font-size: 24px;
+  color: rgb(41, 40, 40);
+}
+#carterer {
+  display: flex;
+  margin-left: 200px;
+}
+.cart_right {
+  border: 1px soild black;
+  margin-left: 90px;
+}
+.first_class {
+  width: 330px;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding-left: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.second_class {
+  width: 330px;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+.first_img > img {
+  padding-right: 10px;
+}
+.top_bar {
+  display: flex;
+  margin-left: 250px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  align-items: center;
+}
+.top_fir {
+  font-size: 17px;
+  margin-right: 20px;
+}
+.top_sec {
+  font-size: 14px;
+  margin-left: 12px;
+}
+.top_im > img {
+  width: 15px;
+  height: 15px;
+}
+.img_fir > img {
+  width: 15px;
+  height: 15px;
+}
+.first_para {
+  margin-right: 80px;
+}
+.first_para1 {
+  margin-right: 110px;
+}
+
+.sli_1 {
+  width: 300px;
+}
+.pa_1 > p {
+  width: 170px;
+  font-size: 16px;
+}
+.Qu {
+  margin-left: 100px;
+  margin-top: 90px;
+}
+.Qu > p {
+  line-height: 30px;
+}
