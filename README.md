@@ -8,20 +8,60 @@ This is a working clone of the "Take it easy, Pharmeasy" apart from their catchy
 
 ![p1](https://user-images.githubusercontent.com/72690740/132959570-b539fb2f-bcd5-4d8b-877c-7b37a007f8ce.PNG)
 
+2. Login, Pincode, Add Address (Side Bars)
+
+![p17](https://user-images.githubusercontent.com/72690740/132959673-c1d40b9c-27c5-4411-8fa0-fb0b54ff5999.PNG)
+
+![p16](https://user-images.githubusercontent.com/72690740/132959674-38f176b4-3979-47f3-ae36-8e5795c16add.PNG)
+
+![p15](https://user-images.githubusercontent.com/72690740/132959675-dbae57a0-0877-4a6d-974c-89dd245983ea.PNG)
+
 3. Order Medicine
-4. Health Care Products
-5. Diagnostic Tests
-6. Offers
-7. Login, Pincode, Add Address (Side Bars)
-8. Cart
-9. Search 
-10. Filter Product
-11. Product Details
-12. Payment Modes
-13. Successful order, Delivery page
-14. User, Prescription (Dropdowns)
-15. User Profile
-16. Header and Footer all the Pages
+
+![p3](https://user-images.githubusercontent.com/72690740/132959671-56327cdf-f258-4be8-99dc-da9d811aeec2.PNG)
+
+5. Health Care Products
+
+![p4](https://user-images.githubusercontent.com/72690740/132959669-b8a6ce20-00b6-4170-bbdc-aaf5662950d7.PNG)
+
+7. Diagnostic Tests
+
+![p5](https://user-images.githubusercontent.com/72690740/132959668-cc37f7e3-3b19-4ae6-9a66-b9d2d68582ef.PNG)
+
+9. Offers
+
+![p6](https://user-images.githubusercontent.com/72690740/132959666-81d96ae6-4dc3-4e61-bc64-db4f5a9c76af.PNG)
+
+9. Cart
+
+![p7](https://user-images.githubusercontent.com/72690740/132959665-aa0c7773-83e5-40b8-a9c4-2693405fc90a.PNG)
+
+![p9](https://user-images.githubusercontent.com/72690740/132959662-0c90da6f-5fc1-449c-8fb8-0843a0bb3e87.PNG)
+
+![p12](https://user-images.githubusercontent.com/72690740/132959679-c2241dc2-0905-453a-a8c8-fbdf260b0208.PNG)
+
+10. Search 
+
+![p8](https://user-images.githubusercontent.com/72690740/132959664-5a4484e2-d061-496e-8f95-a071ea5fe68d.PNG)
+
+12. Filter Product
+
+![p10](https://user-images.githubusercontent.com/72690740/132959681-59e8d7f5-44ae-4547-a265-a7d19966c523.PNG)
+
+12. Product Details
+13. Payment Modes
+
+![p13](https://user-images.githubusercontent.com/72690740/132959677-e915d43c-3365-4a94-adee-09ebf66aa583.PNG)
+
+15. Successful order, Delivery page
+
+![p14](https://user-images.githubusercontent.com/72690740/132959676-7a99e9ff-43ae-4b09-b647-d3d39a089b29.PNG)
+
+17. User, Prescription (Dropdowns)
+18. User Profile
+19. Header and Footer all the Pages
+
+![p2](https://user-images.githubusercontent.com/72690740/132959672-7fea6772-02a8-463e-9aa1-a8b91bc03f65.PNG)
 
 ## Functionalities Implemented
 
