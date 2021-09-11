@@ -5,20 +5,23 @@ This is a working clone of the "Take it easy, Pharmeasy" apart from their catchy
 ## Pages Built
 
 1. Main landing page
-2. Order Medicine
-3. Health Care Products
-4. Diagnostic Tests
-5. Offers
-6. Login, Pincode, Add Address (Side Bars)
-7. Cart
-8. Search 
-9. Filter Product
-10. Product Details
-11. Payment Modes
-12. Successful order, Delivery page
-13. User, Prescription (Dropdowns)
-14. User Profile
-15. Header and Footer all the Pages
+
+![p1](https://user-images.githubusercontent.com/72690740/132959570-b539fb2f-bcd5-4d8b-877c-7b37a007f8ce.PNG)
+
+3. Order Medicine
+4. Health Care Products
+5. Diagnostic Tests
+6. Offers
+7. Login, Pincode, Add Address (Side Bars)
+8. Cart
+9. Search 
+10. Filter Product
+11. Product Details
+12. Payment Modes
+13. Successful order, Delivery page
+14. User, Prescription (Dropdowns)
+15. User Profile
+16. Header and Footer all the Pages
 
 ## Functionalities Implemented
 
