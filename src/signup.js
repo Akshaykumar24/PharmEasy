@@ -49,7 +49,7 @@ function sub() {
 
 function logout() {
   localStorage.removeItem("session");
-  window.location.href = "mainlandingpage.html";
+  window.location.href = "index.html";
 }
 
 function savesess() {

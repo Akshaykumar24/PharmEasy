@@ -162,7 +162,7 @@ header #header2 .righthead p {
 #svgs > #insvg3 {
   display: flex;
   flex-direction: column;
-  background-image: url("imag/doc.png"), url("imag/gre1.svg");
+  background-image: url("../imag/doc.png"), url("../imag/gre1.svg");
   background-size: contain;
   background-repeat: no-repeat;
   min-width: 55vh;
@@ -215,12 +215,12 @@ header #header2 .righthead p {
   border: 2px solid rgb(0, 185, 225);
 }
 #svgs > #insvg2 {
-  background-image: url("imag/doc.png"), url("imag/yel2.svg");
+  background-image: url("../imag/doc.png"), url("../imag/yel2.svg");
   background-position: right, left;
   background-size: 10vw 10vw, contain;
 }
 #svgs > #insvg3 {
-  background-image: url("imag/doc.png"), url("imag/blue3.svg");
+  background-image: url("../imag/doc.png"), url("../imag/blue3.svg");
   background-position: right, left;
   background-size: 10vw 10vw, contain;
 }
