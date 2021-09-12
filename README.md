@@ -101,4 +101,28 @@ This is a working clone of the "Take it easy, Pharmeasy" apart from their catchy
 10. Amount to be Paid and available Payment Modes Shown in the Payment
 11. Delivery Date to be shown in Transaction successful Page
 
+## steps to run the project
+
+1. First step clone the repository using the git command  
+2. Git clone https://github.com/Akshaykumar24/PharmEasy.git
+3. Open the cloned Folder in any IDE 
+4. Open index.html file it will open our cloned website of the landing page.
+5. Initially, the user must log in by clicking on login in the header part 
+6. Login changes to the user by clicking on a user, the user profile page opens 
+7. There is also a feature of adding an address by clicking on the drop-down icon next to the Pincode
+8. After the user adding all his details like name, address, pincode user now can add products to the cart 
+9. The user gets 2 ways to add the product to the cart one by searching the required product name in the search bar of the landing page 
+10. A list of items will be shown, the user can add products to the cart and the number of products added to the cart will be shown at the top of the view cart 
+11. Another way of adding products to the cart is by clicking on health-care products, a list of categories will be opened 
+12. On clicking any categories a filter page opens, a list of products related to that category appears 
+13. Products can be sorted from low to high or high to low, on sidebar products can be selected based on price range
+14. On clicking any of the products, product detail page appears, from there the user can add it to the cart 
+15. On clicking view cart users have the option of selecting the quantity of product required accordingly the price changes 
+16. There is also a coupon option available by applying to it the price reduces to that amount of percentage this reflection can be seen in the order summary at the bottom
+17. Users now can click on proceed to pay the button it will redirect to the payment page 
+18. There are multiple options available to the user to pay the amount 
+19. After selecting the payment mode click on the place order now the order is placed 
+20. Delivery page is shown after payment, the expected date of delivery can be seen and by clicking on back to home it will take to a landing page 
+21. So once the user is done with the purchase he can log out by clicking on the log out which appear by hovering on the user name 
+
 ## Please do check out our Cloned Pharmeasy Website !!!!!
