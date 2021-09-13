@@ -4,11 +4,11 @@ This is a working clone of the "Take it easy, Pharmeasy" apart from their catchy
 
 ## Pages Built and steps to run the project
 
-First step clone the repository using the git command Git clone https://github.com/Akshaykumar24/PharmEasy.git
+First step clone the repository using the git command - git clone https://github.com/Akshaykumar24/PharmEasy.git
 
 ### 1. Open index.html file on the live server(using VS code live server) 
 
-img
+![ph2](https://user-images.githubusercontent.com/72690740/133028330-4463aaec-040f-4702-b3b9-1d350b88d468.PNG)
 
 ### 2. This is our landing page and click on Login, Pincode, Add Address (Side Bars)
 
@@ -24,29 +24,26 @@ img
 
 ### 4. The user gets 2 ways to add the product to the cart one by searching the required product name in the search bar of the landing page 
 
-img
+![ph3](https://user-images.githubusercontent.com/72690740/133028766-bd195ed3-2f28-422c-be14-53ad2976c523.PNG)
 
-A list of items will be shown, the user can add products to the cart and the number of products added to the cart will be shown at the top of the view cart 
+A list of items will be shown, the user can add products to the cart 
 
 ![p8](https://user-images.githubusercontent.com/72690740/132959664-5a4484e2-d061-496e-8f95-a071ea5fe68d.PNG)
 
-### 4. Another way of adding products to the cart is by clicking on health-care products, a list of categories will be opened 
+### 5. Another way of adding products to the cart is by clicking on health-care products, a list of categories will be opened 
 
 ![p4](https://user-images.githubusercontent.com/72690740/132959669-b8a6ce20-00b6-4170-bbdc-aaf5662950d7.PNG)
 
-### 5. On clicking any categories a filter page opens, a list of products related to that category appears 
+### 6. On clicking any categories a filter page opens, a list of products related to that category appears 
+Products can be sorted from low to high or high to low, on sidebar products can be selected based on price range 
 
 ![p10](https://user-images.githubusercontent.com/72690740/132959681-59e8d7f5-44ae-4547-a265-a7d19966c523.PNG)
 
-Products can be sorted from low to high or high to low, on sidebar products can be selected based on price range
-
-img
-
-### 10. On clicking any of the products, product detail page appears, from there the user can add it to the cart 
+### 7. On clicking any of the products, product detail page appears, from there the user can add it to the cart and the number of products added to the cart will be shown at the top of the view cart 
 
 ![p18](https://user-images.githubusercontent.com/72690740/132960331-f6cd9fcc-dc6b-40d1-94ca-ed0320ee5089.PNG)
 
-### 11. On clicking veiw cart selected items will be shown 
+### 8. On clicking veiw cart selected items will be shown 
 
 ![p9](https://user-images.githubusercontent.com/72690740/132959662-0c90da6f-5fc1-449c-8fb8-0843a0bb3e87.PNG)
 
@@ -54,37 +51,37 @@ There is also a coupon option available by applying to it the price reduces to t
 
 ![p12](https://user-images.githubusercontent.com/72690740/132959679-c2241dc2-0905-453a-a8c8-fbdf260b0208.PNG)
 
-### 12. Users now can click on proceed to pay the button it will redirect to the payment page. After selecting the payment mode click on the place order
+### 9. Users now can click on proceed to pay the button it will redirect to the payment page. After selecting the payment mode click on the place order
 
 ![p13](https://user-images.githubusercontent.com/72690740/132959677-e915d43c-3365-4a94-adee-09ebf66aa583.PNG)
 
-### 12. Now the order is placed. Delivery page is shown after payment, the expected date of delivery can be seen and by clicking on back to home it will take to a landing page 
+### 10. Now the order is placed. Delivery page is shown after payment, the expected date of delivery can be seen and by clicking on back to home it will take to a landing page 
 
 ![p14](https://user-images.githubusercontent.com/72690740/132959676-7a99e9ff-43ae-4b09-b647-d3d39a089b29.PNG)
 
-### 13. So once the user is done with the purchase he can log out by clicking on the log out which appear by hovering on the user name 
+### 11. So once the user is done with the purchase he can log out by clicking on the log out which appear by hovering on the user name 
 
-img 
+![ph4](https://user-images.githubusercontent.com/72690740/133028769-e2f54a54-9c78-498c-98e0-a0922cdf1943.PNG)
 
-## Below are some static pages 
+## Below are some Static pages 
 
-### 5. Order Medicine
+### 12. Order Medicine
 
 ![p3](https://user-images.githubusercontent.com/72690740/132959671-56327cdf-f258-4be8-99dc-da9d811aeec2.PNG)
 
-### 5. Diagnostic Tests
+### 13. Diagnostic Tests
 
 ![p5](https://user-images.githubusercontent.com/72690740/132959668-cc37f7e3-3b19-4ae6-9a66-b9d2d68582ef.PNG)
 
-### 6. Offers
+### 14. Offers
 
 ![p6](https://user-images.githubusercontent.com/72690740/132959666-81d96ae6-4dc3-4e61-bc64-db4f5a9c76af.PNG)
 
-### 13. User, Prescription (Dropdowns)
+### 15. User, Prescription (Dropdowns)
 
 ![p19](https://user-images.githubusercontent.com/72690740/132960334-e81317ab-cd4f-4b27-992d-147408ba034f.PNG)
 
-### 15. Footer in all the Pages
+### 16. Footer in all the Pages
 
 ![p2](https://user-images.githubusercontent.com/72690740/132959672-7fea6772-02a8-463e-9aa1-a8b91bc03f65.PNG)
 
