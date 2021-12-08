@@ -1100,23 +1100,23 @@
     </script>
     <script>
       function cpin() {
-      let pin = document.getElementById("pinc").value;
-      //console.log(pin.length);
-      if (pin.length < 6 || pin.length > 6) {
-        alert("Enter a vaalid Pincode");
-        return;
-      }
-      let tobe = pins[pin];
-      console.log(tobe);
-      let pl = document.getElementById("pinhere");
-      if (tobe == undefined) {
-        alert("Currently not deliverable Here, But we'll be there soon!!!");
-        return
-      } else {
-        let pinr = JSON.parse(localStorage.getItem("session"));
-       pinr[0].pin=tobe
-        pl.textContent = tobe;
-
+        let pin = document.getElementById("pinc").value
+        //console.log(pin.length);
+        if (pin.length < 6 || pin.length > 6) {
+          alert("Enter a vaalid Pincode")
+          return
+        }
+        let tobe = pins[pin]
+        console.log(tobe)
+        let pl = document.getElementById("pinhere")
+        if (tobe == undefined) {
+          alert("Currently not deliverable Here, But we'll be there soon!!!")
+          return
+        } else {
+          let pinr = JSON.parse(localStorage.getItem("session"))
+          pinr[0].pin = tobe
+          pl.textContent = tobe
+        }
       }
     </script>
 
