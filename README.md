@@ -6,7 +6,9 @@ This is a working clone of the "Take it easy, Pharmeasy" apart from their catchy
 
 First step clone the repository using the git command - git clone https://github.com/Akshaykumar24/PharmEasy.git 
 
-Go to PharmEasy Folder click on pages folder
+Go to PharmEasy Folder git command - cd PharmEasy/  
+
+click on pages folder
 ### 1. Open index.html file on the live server(using VS code live server) 
 
 ![ph2](https://user-images.githubusercontent.com/72690740/133028330-4463aaec-040f-4702-b3b9-1d350b88d468.PNG)
