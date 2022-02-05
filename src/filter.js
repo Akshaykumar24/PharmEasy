@@ -346,11 +346,11 @@ function mai() {
   sortcnt++;
   if (sortcnt % 2 == 0) {
     if (doc.value == "low") {
-      //console.log("fuck yeah");
+     
       lowa();
     }
     if (doc.value == "high") {
-      //console.log("higher")
+     
       higha();
     }
     if (doc.value == "popu") {
